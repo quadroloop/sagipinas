@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react'
 import PerfectScrollbar from 'perfect-scrollbar'
 
-import Sidebar from '../components/Sidebar'
+function Dashboard(props) {
 
-function Home(props) {
   useEffect(() => {
     new PerfectScrollbar('.feed')
   }, [])
 
-  return (
-    <div className="container">
-      <Sidebar />
 
+  return (
+    <div className="dashboard">
       <div className="feed">
         {
           Array.from(Array(7)).map((i, index) => (
@@ -31,4 +29,4 @@ function Home(props) {
   )
 }
 
-export default Home
+export default Dashboard
