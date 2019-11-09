@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import {
@@ -7,7 +7,8 @@ import {
   faHospital,
   faNewspaper,
   faCog,
-  // faAngleDoubleLeft,
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faFedora,
@@ -16,8 +17,10 @@ import {
 import NavItem from './NavItem'
 
 function Sidebar(props) {
+  const [ collapsed, setCollapsed ] = useState(false)
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${collapsed && 'collapsed'}`}>
       <div className="brand">
         <h1>
           <Fa icon={faFedora} />
@@ -34,7 +37,7 @@ function Sidebar(props) {
           Facilities
         </NavItem>
         <NavItem to="/news" icon={faNewspaper}>
-          Newspaper
+          News
         </NavItem>
         <NavItem to="/settings" icon={faCog}>
           Settings
@@ -50,9 +53,9 @@ function Sidebar(props) {
             </span>
           </Link>
         </li>
-        {/* <li className="collapse-toggle">
-          <Fa icon={faAngleDoubleLeft} />
-        </li> */}
+        <li className="collapse-toggle" onClick={() => setCollapsed(!collapsed)}>
+          <Fa icon={collapsed ? faAngleDoubleRight : faAngleDoubleLeft} />
+        </li>
       </ul>
     </div>
   )
