@@ -9,7 +9,7 @@ import Settings from './pages/Settings'
 
 function Home(props) {
   return (
-    <div className="container">
+    <div className="home-container">
       <Sidebar />
 
       <Route path="/" exact component={Dashboard} />
