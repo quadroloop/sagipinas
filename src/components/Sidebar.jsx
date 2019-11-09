@@ -44,7 +44,7 @@ function Sidebar(props) {
         </NavItem>
       </ul>
 
-      <ul className="sidebar-nav">
+      <ul className="sidebar-nav bottom">
         <li>
           <Link>
             <Fa icon={faSignOutAlt} /> 

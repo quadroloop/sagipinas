@@ -38,6 +38,8 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   flex-direction: column;
   justify-content: space-between;
 
+  overflow: hidden;
+
   > .brand {
     color: #ffffff;
     background: $secondary;
@@ -81,6 +83,14 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
           }
         }
       }
+    }
+  }
+
+  &:hover {
+
+    > .sidebar-nav.bottom {
+      transform: translateY(0px);
+      transition: all $transition;
     }
   }
 
@@ -154,6 +164,11 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
       box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.125);
     }
 
+    transition: all $transition;
+  }
+
+  &.bottom {
+    transform: translateY(52px);
     transition: all $transition;
   }
 }

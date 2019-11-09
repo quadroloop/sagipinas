@@ -3,16 +3,19 @@ import { Route } from 'react-router-dom'
 
 import Sidebar from '../../components/Sidebar'
 import Dashboard from './pages/Dashboard'
+import Facilities from './pages/Facilities'
+import News from './pages/News'
+import Settings from './pages/Settings'
 
 function Home(props) {
-  const { match } = props
-
   return (
     <div className="container">
       <Sidebar />
 
-      <Route path={match.url} exact component={Dashboard} />
-      <Route path={`${match.url}/facilities`} render={() => <h1>Facilities</h1>} />
+      <Route path="/" exact component={Dashboard} />
+      <Route path="/facilities" component={Facilities} />
+      <Route path="/news" component={News} />
+      <Route path="/settings" component={Settings} />
     </div>
   )
 }
