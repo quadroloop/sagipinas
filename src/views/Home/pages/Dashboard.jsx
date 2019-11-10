@@ -1,5 +1,13 @@
 import React, { useEffect } from 'react'
 import PerfectScrollbar from 'perfect-scrollbar'
+import io from 'socket.io-client';
+
+const socket = io('https://341854e4.ngrok.io');
+
+socket.on("report", (data) => {
+  console.log(data);
+})
+
 
 function Dashboard(props) {
 
@@ -22,7 +30,7 @@ function Dashboard(props) {
 
       <div className="content">
         <div className="info-card">
-          
+
         </div>
       </div>
     </div>

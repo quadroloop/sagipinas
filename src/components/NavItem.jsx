@@ -5,12 +5,20 @@ import { Link, withRouter, } from 'react-router-dom'
 function NavItem(props) {
   const { location, icon, to, children } = props
 
+  const closeSidebar = () => {
+    if (document.contains(document.getElementsByClassName('sidebar-toggle')[0])) {
+      setTimeout(() => {
+        document.getElementsByClassName('sidebar-toggle')[0].click();
+      }, 300);
+    }
+  }
+
   return (
-    <li className={location.pathname === to && 'active'}>
+    <li className={location.pathname === to && 'active'} onClick={() => { closeSidebar() }}>
       <Link to={to}>
         <Fa icon={icon} />
         <span>
-          { children }
+          {children}
         </span>
       </Link>
     </li>
