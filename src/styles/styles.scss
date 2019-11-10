@@ -31,6 +31,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   max-width: 200px;
   min-height: 100vh;
   background: $primary;
+  z-index: 9999999 !important;
 
   display: flex;
   flex-direction: column;
@@ -136,6 +137,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   right: 1rem;
   z-index: 9;
   border-radius: 5px;
+  z-index: 9999999 !important;
   box-shadow: $box-shadow;
 
   font-size: 2.5rem;
@@ -268,10 +270,45 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   background: #ffffff;
   margin-bottom: 1rem;
   border-radius: 5px;
+  padding: 15px;
   box-shadow: $box-shadow-card;
+  transition: 0.3s;
+  cursor: pointer;
+  color: rgb(75, 70, 70);
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .fa-fire{
+    color: red;
+  }
+
+
+  .tag{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: rgba(217, 224, 236, 0.87);
+    border-radius: 20px;
+    display: inline-block;
+    color: #000;
+  }
+
+  .detail{
+    font-size: 13px;
+  }
+
+  &:hover{
+    box-shadow: 0px 5px 10px 0px rgba(5, 174, 204, 0.541);
+    transition: 0.3s;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  .time-tag{
+    font-size: 12px;
+    float: right;
   }
 }
 
@@ -287,10 +324,16 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 .content {
   position: relative;
 
+  #googleMap{
+    background: #EEF1F6;
+    height: 100%;
+    width: 100%;
+  }
+
   flex: 1;
   min-height: 100vh;
 
-  background: url('../assets/img/map.png');
+  background: #EEF1F6;
   background-size: cover;
   background-position: center;
 
@@ -302,6 +345,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 
 .info-card {
   position: absolute;
+  z-index: 999;
   // display: none;
   left: 1rem;
   bottom: 1rem;
@@ -310,7 +354,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   height: 250px;
   padding: 5px 20px;
   border-radius: 5px;
-  background: linear-gradient(to right,#ffffff,rgba(255,255,255,0.88));
+  background: #ffff;
   box-shadow: $box-shadow;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -325,7 +369,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 
   button{
-    background: linear-gradient(to right, rgb(0, 153, 255),rgb(66, 33, 156));
+    background: linear-gradient(to right, rgb(0, 153, 255),rgb(24, 38, 165));
     outline: none;
     cursor: pointer;
     color: #fff;
@@ -399,12 +443,12 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 
   .info-footer{
     width: 100%;
-    background: linear-gradient(transparent,#fff 90%);
+    background: linear-gradient(rgba(255,255,255,0.5),#fff 90%);
     position: absolute;
     bottom: 0px;
     right: 0px;
     border-radius: 0px 0px 5px 5px;
-    height: 150px;
+    height: 120px;
   }
 }
 
@@ -416,4 +460,8 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   padding: 5px 10px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+
+#renderMap{
+  display:none;
 }
