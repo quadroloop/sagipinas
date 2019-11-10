@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import PerfectScrollbar from 'perfect-scrollbar'
+
 import io from 'socket.io-client';
+
 
 const socket = io('https://sagipinas.herokuapp.com');
 
@@ -30,9 +32,9 @@ function Dashboard(props) {
 
       <div className="content">
         <div className="info-card">
-          <button className="test-btn" onClick={() => {
-            socket.emit("verifyReport", { id: 2695506260470251 })
-          }}>Verify</button>
+          <h3><i className="fa fa-map-marker marker"></i> Manila, Philippines</h3>
+          <p className="hazard-tag"><i className="fa fa-circle"></i> Earthquake</p>
+          <button className="test-btn"><i className="fa fa-check" /> Verify</button>
         </div>
       </div>
     </div>
