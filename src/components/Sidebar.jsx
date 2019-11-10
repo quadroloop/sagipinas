@@ -6,13 +6,12 @@ import {
   faMapMarkedAlt,
   faNewspaper,
   faCog,
+  faBars,
   faList,
   faAngleDoubleLeft,
   faAngleDoubleRight,
 } from '@fortawesome/free-solid-svg-icons'
-import {
-  faFedora,
-} from '@fortawesome/free-brands-svg-icons'
+import logo from '../assets/img/logo.png'
 
 import NavItem from './NavItem'
 
@@ -27,7 +26,9 @@ function Sidebar(props) {
       >
         <div className="brand">
           <h2>
-            <Fa icon={faFedora} /> <span>SagiPinas</span>
+            <img src={logo} className="logo" alt="logo" />
+            <br />
+            <span>SagiPinas</span>
           </h2>
         </div>
         <ul className="sidebar-nav mid">
@@ -64,7 +65,7 @@ function Sidebar(props) {
       </div>
 
       <div className="sidebar-toggle" onClick={() => setToggled(!toggled)}>
-        <Fa icon={faFedora} />
+        <Fa icon={faBars} />
       </div>
     </React.Fragment>
   )
