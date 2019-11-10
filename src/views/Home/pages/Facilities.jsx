@@ -4,7 +4,7 @@ function Facilities(props) {
   console.log('akjshdkjahsdjkahskd')
 
   return (
-    <h1>Facilities</h1>
+    <h1 className="m-l-25">Facilities</h1>
   )
 }
 
