@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import {
   faSignOutAlt,
   faMapMarkedAlt,
-  faHospital,
   faNewspaper,
   faCog,
+  faList,
   faAngleDoubleLeft,
   faAngleDoubleRight,
 } from '@fortawesome/free-solid-svg-icons'
@@ -26,9 +26,9 @@ function Sidebar(props) {
         className={`sidebar ${collapsed && 'collapsed'} ${toggled && 'toggled'}`}
       >
         <div className="brand">
-          <h1>
-            <Fa icon={faFedora} />
-          </h1>
+          <h2>
+            <Fa icon={faFedora} /> <span>SagiPinas</span>
+          </h2>
         </div>
         <ul className="sidebar-nav mid">
           <li className="title">
@@ -37,8 +37,8 @@ function Sidebar(props) {
           <NavItem to="/" icon={faMapMarkedAlt}>
             Dashboard
           </NavItem>
-          <NavItem to="/facilities" icon={faHospital}>
-            Facilities
+          <NavItem to="/Incidents" icon={faList}>
+            Incidents
           </NavItem>
           <NavItem to="/news" icon={faNewspaper}>
             News

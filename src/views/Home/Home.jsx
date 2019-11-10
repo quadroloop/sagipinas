@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom'
 
 import Sidebar from '../../components/Sidebar'
 import Dashboard from './pages/Dashboard'
-import Facilities from './pages/Facilities'
+import Incidents from './pages/Incidents'
 import News from './pages/News'
 import Settings from './pages/Settings'
 
@@ -13,7 +13,7 @@ function Home(props) {
       <Sidebar />
 
       <Route path="/" exact component={Dashboard} />
-      <Route path="/facilities" component={Facilities} />
+      <Route path="/Incidents" component={Incidents} />
       <Route path="/news" component={News} />
       <Route path="/settings" component={Settings} />
     </div>

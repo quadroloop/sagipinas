@@ -40,7 +40,8 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 
   > .brand {
     color: #ffffff;
-    background: $secondary;
+    background: linear-gradient(rgba(72, 33, 245, 0.798) 50%,$primary), url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/GfRLKaE/videoblocks-abstract-red-polygon-background-mov_rkejes6zzb_thumbnail-full01.png);
+    background-size: cover;
     margin: 0;
     text-align: center;
     padding: 0.5rem 0;
@@ -49,7 +50,14 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   &.collapsed {
     max-width: 75px;
 
+    .brand{
+        span{
+          display: none;
+        }
+    }
+
     > .sidebar-nav {
+
 
       > li {
 
@@ -295,4 +303,11 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   border-radius: 5px;
   background: #ffffff;
   box-shadow: $box-shadow;
+
+  button{
+    background: black;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+  }
 }
