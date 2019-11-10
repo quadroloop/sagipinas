@@ -42,6 +42,10 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     width: 45px;
   }
 
+  strong{
+    color: rgb(255, 179, 0);
+  }
+
   > .brand {
     color: #ffffff;
     background: linear-gradient(rgba(72, 33, 245, 0.798) 50%,$primary), url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/GfRLKaE/videoblocks-abstract-red-polygon-background-mov_rkejes6zzb_thumbnail-full01.png);
@@ -308,11 +312,12 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   border-radius: 5px;
   background: linear-gradient(to right,#ffffff,rgba(255,255,255,0.88));
   box-shadow: $box-shadow;
-  transition: 0.5s;
+  overflow: hidden;
+  transition: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 
   &:hover{
     height: 500px;
-    transition: 0.5s;
+    transition: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 
   .marker{
@@ -343,6 +348,42 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
       transition: 0.4s;
     }
   }
+
+  .info-body{
+    height: 350px;
+    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .detail-card{
+      padding: 20px;
+      border-radius: 4px;
+      background: #EEF1F6;
+    }
+  }
+
+  hr{
+    border-top: 0.8px;
+  }
+
+  .time-tag{
+    font-size: 12px;
+    color: rgba(81, 78, 233, 0.966);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .info-footer{
+    width: 100%;
+    background: linear-gradient(transparent,#fff 90%);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 0px 0px 5px 5px;
+    height: 150px;
+  }
 }
 
 .hazard-tag{
@@ -351,6 +392,6 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   color: rgb(80, 77, 77);
   display: inline;
   padding: 5px 10px;
-  border-radius: 25px;
+  border-radius: 5px;
   text-transform: uppercase;
 }

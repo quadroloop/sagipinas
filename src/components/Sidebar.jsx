@@ -28,7 +28,7 @@ function Sidebar(props) {
           <h2>
             <img src={logo} className="logo" alt="logo" />
             <br />
-            <span>SagiPinas</span>
+            <span>Sagi<strong>Pin</strong>as</span>
           </h2>
         </div>
         <ul className="sidebar-nav mid">
