@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import PerfectScrollbar from 'perfect-scrollbar'
+import loading from '../../../assets/img/loading.gif'
 
 import io from 'socket.io-client';
 
@@ -18,12 +19,11 @@ function Dashboard(props) {
   }, [])
 
 
-  if (document.contains(document.getElementById('renderMap'))) {
-    setTimeout(() => {
-      document.getElementById("renderMap").click();
-    }, 1000)
-  }
-
+  // if (document.contains(document.getElementById('renderMap'))) {
+  //   setTimeout(() => {
+  //     document.getElementById("renderMap").click();
+  //   }, 1000)
+  // }
 
   return (
     <div className="dashboard">
@@ -73,7 +73,9 @@ function Dashboard(props) {
           </div>
         </div>
 
-        <div id="googleMap"></div>
+        <div id="googleMap">
+          <img src={loading} className="map-loading" alt="loading" />
+        </div>
 
 
       </div>
