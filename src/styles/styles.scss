@@ -332,7 +332,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     .map-loading{
       width: 60px;
       position: absolute;
-      top: 320px;
+      top: 350px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -356,7 +356,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 .info-card {
   position: absolute;
   z-index: 999;
-  // display: none;
+  display: none;
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
