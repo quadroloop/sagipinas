@@ -9,11 +9,11 @@ import Settings from './pages/Settings'
 
 function Home(props) {
   return (
-    <div className="home-container">
+    <div className="content-container">
       <Sidebar />
 
       <Route path="/" exact component={Dashboard} />
-      <Route path="/Incidents" component={Incidents} />
+      <Route path="/incidents" component={Incidents} />
       <Route path="/news" component={News} />
       <Route path="/settings" component={Settings} />
     </div>
