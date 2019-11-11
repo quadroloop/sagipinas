@@ -16,6 +16,7 @@ function Dashboard(props) {
 
   useEffect(() => {
     new PerfectScrollbar('.feed')
+    new PerfectScrollbar('.info-body')
   }, [])
 
 
@@ -43,7 +44,7 @@ function Dashboard(props) {
       </div>
 
       <div className="content">
-        <div className="info-card">
+        <div className="info-card animated slideInUp fastest" id="infoCard">
           <h3><i className="fa fa-map-marker marker"></i> Manila, Philippines</h3>
           <p className="hazard-tag"><i className="fa fa-bullseye"></i> Earthquake</p>
           <span className="time-tag"><i className="fa fa-clock-o"></i> 2 hours ago</span>
