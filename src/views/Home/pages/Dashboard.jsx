@@ -28,19 +28,7 @@ function Dashboard(props) {
 
   return (
     <div className="dashboard">
-      <div className="feed">
-        {
-          Array.from(Array(7)).map((i, index) => (
-            <div className="card">
-              <span className="tag"><i className="fa fa-fire"></i> FIRE</span>
-              <span className="time-tag"><i className="fa fa-clock-o"></i> 2 hours ago</span>
-
-              <p className="detail">
-                complete na yung api, and chatbot deployed na rin sa heroku, putting my full power on complete na yung api, and chatbot deployed na rin sa heroku, putting my full power on
-              the front end now, haha</p>
-            </div>
-          ))
-        }
+      <div className="feed" id="feed">
       </div>
 
       <div className="content">
@@ -70,7 +58,11 @@ function Dashboard(props) {
           </div>
           <div className="info-footer">
             <button className="locate"><i className="fa fa-crosshairs" /> Locate</button>
-            <button className="verify"><i className="fa fa-check" /> Verify</button>
+            <button className="verify"
+              onClick={() => {
+                socket.emit("verifyReport", { id: 2695506260470251, uid: "demo1" })
+              }}
+            ><i className="fa fa-check" /> Verify</button>
           </div>
         </div>
 
