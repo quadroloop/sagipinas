@@ -287,8 +287,8 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   overflow: hidden;
   text-overflow: ellipsis;
 
-  .fa-fire{
-    color: red;
+  .fa-warning{
+    color: rgb(235, 47, 47);
   }
 
 
@@ -479,6 +479,10 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   padding: 5px 10px;
   border-radius: 5px;
   text-transform: uppercase;
+
+  i{
+    margin-right: 3px;
+  }
 }
 
 #renderMap{
@@ -535,21 +539,21 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 
   &.approved {
-    
+
     &:before {
       background: $success;
     }
   }
 
   &.pending {
-    
+
     &:before {
       background: $info;
     }
   }
 
   &.rejected {
-    
+
     &:before {
       background: $error;
     }
@@ -569,11 +573,11 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 
 .inbox-list-table {
   overflow: visible;
-  
+
   .rc-table {
 
     &-body {
-      
+
       > table {
         border-spacing: 0;
       }
@@ -582,7 +586,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     &-thead {
 
       > tr {
-        
+
         &:hover {
           background: none;
         }
@@ -613,12 +617,12 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 
           &:first-child {
             border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px; 
+            border-bottom-left-radius: 10px;
           }
 
           &:last-child {
             border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px; 
+            border-bottom-right-radius: 10px;
           }
         }
       }

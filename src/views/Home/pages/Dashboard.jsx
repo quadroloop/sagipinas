@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import PerfectScrollbar from 'perfect-scrollbar'
 import loading from '../../../assets/img/loading.gif'
+import axios from 'axios';
 
 import io from 'socket.io-client';
 
@@ -14,17 +15,43 @@ socket.on("report", (data) => {
 
 function Dashboard(props) {
 
+
+
+  const loadFeed = () => {
+    document.getElementById('feed').innerHTML = '';
+    axios.get('https://sagipinas.herokuapp.com/incidents')
+      .then(res => {
+        res.data.reverse().forEach(feed => {
+          if (feed.status === 'unverified') {
+            document.getElementById('feed').innerHTML += `
+            <div class="card">
+            <span class="tag"><i class="fa fa-warning"></i> ${feed.type === 'others' ? "Accident" : feed.type}</span>
+            <span class="time-tag"><i className="fa fa-clock-o"></i> 2 hours ago</span>
+            <p class="detail">
+              ${feed.details}
+             </p>
+            </div>
+            `
+          }
+        })
+      })
+  }
+
   useEffect(() => {
     new PerfectScrollbar('.feed')
     new PerfectScrollbar('.info-body')
+
+    loadFeed();
+
+
+    // if (document.contains(document.getElementById('renderMap'))) {
+    //   setTimeout(() => {
+    //     document.getElementById("renderMap").click();
+    //   }, 1000)
+    // }
+
   }, [])
 
-
-  // if (document.contains(document.getElementById('renderMap'))) {
-  //   setTimeout(() => {
-  //     document.getElementById("renderMap").click();
-  //   }, 1000)
-  // }
 
   return (
     <div className="dashboard">
