@@ -25,8 +25,6 @@ const InfoCard = () => {
       })
   }
 
-
-
   return (
     <div className="info-card animated slideInUp fastest" id="infoCard">
       <h3><i className="fa fa-map-marker marker"></i> <span id="location"></span></h3>

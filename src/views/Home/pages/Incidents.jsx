@@ -1,100 +1,68 @@
-import React, { useState, useEffect, } from 'react'
-import Table from 'rc-table'
+import React, { useEffect, } from 'react'
 import moment from 'moment'
 import axios from 'axios'
 
-const columns = [
-  {
-    title: 'Type',
-    dataIndex: 'type',
-    key: 'type',
-  },
-  {
-    title: 'Details',
-    dataIndex: 'details',
-    key: 'details',
-    render: (value, row) => {
-      const truncate = value.substring(0, 75) + '...'
-
-      return (
-        <p className="mt-0 mb-0">
-          {value.length < 75 ? value : truncate}
-        </p>
-      )
-    }
-  },
-  {
-    title: 'Time',
-    dataIndex: 'time',
-    key: 'time',
-    render: (value) => {
-      return moment(value).format('MMM DD, YYYY HH:mm').toString()
-    }
-  },
-]
 
 function Incidents(props) {
-  const [incidents, setIncidents] = useState([])
 
   useEffect(() => {
-    axios.get('http://sagipinas.herokuapp.com/incidents')
-      .then(response => {
-        setIncidents(response.data)
-      })
+
   }, [])
 
   return (
-    <div className="content">
-      <h1 className="m-l-25">
-        Incidents
-      </h1>
-      <div className="card-row m-l-25 m-r-25">
-        <div className="card-stat">
-          <h3 className="card-stat-title">
-            Approved
-          </h3>
-          <h1 className="card-stat-value approved">
-            0
-          </h1>
-        </div>
-        <div className="card-stat">
-          <h3 className="card-stat-title">
-            Pending
-          </h3>
-          <h1 className="card-stat-value pending">
-            0
-          </h1>
-        </div>
-        <div className="card-stat">
-          <h3 className="card-stat-title">
-            Rejected
-          </h3>
-          <h1 className="card-stat-value rejected">
-            0
-          </h1>
-        </div>
-        <div className="card-stat">
-          <h3 className="card-stat-title">
-            Total
-          </h3>
-          <h1 className="card-stat-value">
-            0
-          </h1>
-        </div>
+    <div className="settings-page">
+      <h1><i className="fa fa-list"></i> Incidents</h1>
+      <div className="divider"></div>
+      <p className="sub-title">Summary of all reported incidents are here</p>
+
+
+
+      <input type="text" className="search-bar" placeholder="Search list" />
+
+      <div className="table-delta">
+
+        <table>
+
+          <tbody>
+            <tr>
+              <td data-label="Category">Visa - 3412</td>
+              <td data-label="Details">04/01/2016</td>
+              <td data-label="Date Reported">$1,190</td>
+              <td data-label="Action">03/01/2016 - 03/31/2016</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <br />
+
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Details</th>
+              <th scope="col">Date Reported</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Category">Visa - 3412</td>
+              <td data-label="Details">04/01/2016</td>
+              <td data-label="Date Reported">$1,190</td>
+              <td data-label="Status">Unverified</td>
+              <td data-label="Action">
+                <button className="reject-btn">Reject</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
       </div>
 
-      <div className="inbox m-l-25 m-r-25 m-t-25 m-b-25">
-        <div className="inbox-list">
-          <Table
-            data={incidents}
-            columns={columns}
-            className="inbox-list-table"
-          />
-        </div>
-        <div className="inbox-view">
-
-        </div>
-      </div>
     </div>
   )
 }
