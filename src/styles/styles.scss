@@ -264,7 +264,6 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   background: $bg;
   overflow-y: auto;
   padding: 1rem;
-
   display: flex;
   flex-direction: column;
 
@@ -296,7 +295,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     text-transform: uppercase;
     font-size: 12px;
     padding: 5px 10px;
-    background: rgba(217, 224, 236, 0.87);
+    background: rgb(217, 224, 236);
     border-radius: 20px;
     display: inline-block;
     color: #000;
@@ -396,7 +395,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     font-size: 15px;
     border: 0px;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 4px;
     transition: 0.4s;
     position: absolute;
     bottom: 20px;
@@ -422,6 +421,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     width: 100%;
     overflow: hidden;
     overflow-y: auto;
+    padding-bottom: 90px;yarn
 
     .detail-text{
       color: $primary;
@@ -641,4 +641,56 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 .inbox-view {
   flex: 1;
   max-width: 450px;
+}
+
+
+.pulseDot {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #df0d0d;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(223, 43, 19, 0.849);
+  animation: pulse1 2s infinite;
+  margin-bottom: -23px;
+  margin-left: 5px;
+}
+
+$dot-shadow: rgba(223, 43, 19, 0.849);
+
+@-webkit-keyframes pulse1 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 $dot-shadow;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse1 {
+  0% {
+    -moz-box-shadow: 0 0 0 0 $dot-shadow;
+    box-shadow: 0 0 0 0 $dot-shadow;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+.coordinates{
+  li{
+    color: #333;
+    span{
+      color: rgb(63, 168, 238);
+      font-weight: 700;
+    }
+  }
 }

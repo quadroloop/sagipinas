@@ -12,92 +12,17 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-
   <title>SagiPinas</title>
 </head>
 
 <body>
-  <button onclick="renderGMap()" id="renderMap" class="map-btn"></button>
+  <button onclick="renderGMap()" id="renderMap" style="display:none"></button>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
-
-<script>
-  function renderGMap() {
-    myCenter = new google.maps.LatLng(14.508854, 121.0017);
-    var mapOptions = {
-      center: myCenter,
-      zoom: 10, scrollwheel: false, draggable: true,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [
-        {
-          "featureType": "all",
-          "elementType": "all",
-          "stylers": [
-            {
-              "hue": "#008eff"
-            }
-          ]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "on"
-            }
-          ]
-        },
-        {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [
-            {
-              "saturation": "40"
-            },
-            {
-              "lightness": "-20"
-            }
-          ]
-        },
-        {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "on"
-            }
-          ]
-        },
-        {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "simplified"
-            },
-            {
-              "saturation": "-60"
-            },
-            {
-              "lightness": "-20"
-            }
-          ]
-        }
-      ]
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-    marker.setMap(map);
-  }
-
-
-</script>
-
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5kFZMwUIUDZ25nTtLx0_0G3x1d2GMiCY&callback=myMap"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="%PUBLIC_URL%/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5kFZMwUIUDZ25nTtLx0_0G3x1d2GMiCY&callback"></script>
 
 </html>
