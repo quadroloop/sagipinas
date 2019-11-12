@@ -18,7 +18,7 @@ const columns = [
 
       return (
         <p className="mt-0 mb-0">
-          { value.length < 75 ? value : truncate }
+          {value.length < 75 ? value : truncate}
         </p>
       )
     }
@@ -34,7 +34,7 @@ const columns = [
 ]
 
 function Incidents(props) {
-  const [ incidents, setIncidents ] = useState([])
+  const [incidents, setIncidents] = useState([])
 
   useEffect(() => {
     axios.get('http://sagipinas.herokuapp.com/incidents')
@@ -44,7 +44,7 @@ function Incidents(props) {
   }, [])
 
   return (
-    <div className="content display-flex-column">
+    <div className="content">
       <h1 className="m-l-25">
         Incidents
       </h1>
@@ -54,7 +54,7 @@ function Incidents(props) {
             Approved
           </h3>
           <h1 className="card-stat-value approved">
-            99
+            0
           </h1>
         </div>
         <div className="card-stat">
@@ -62,7 +62,7 @@ function Incidents(props) {
             Pending
           </h3>
           <h1 className="card-stat-value pending">
-            99
+            0
           </h1>
         </div>
         <div className="card-stat">
@@ -70,7 +70,7 @@ function Incidents(props) {
             Rejected
           </h3>
           <h1 className="card-stat-value rejected">
-            99
+            0
           </h1>
         </div>
         <div className="card-stat">
@@ -78,7 +78,7 @@ function Incidents(props) {
             Total
           </h3>
           <h1 className="card-stat-value">
-            99
+            0
           </h1>
         </div>
       </div>

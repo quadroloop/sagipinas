@@ -2,7 +2,11 @@ import React from 'react'
 
 function Settings(props) {
   return (
-    <h1 className="m-l-25">Settings</h1>
+    <div className="settings-page">
+      <h1><i className="fa fa-cog"></i> Settings</h1>
+      <div className="divider"></div>
+      <p className="sub-title">You can publish small articles or annoucements here.</p>
+    </div>
   )
 }
 

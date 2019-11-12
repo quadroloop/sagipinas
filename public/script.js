@@ -405,12 +405,21 @@ const cardSelect = (uid) => {
 
         setTimeout(() => {
           if (document.getElementsByClassName('gm-control-active')[1]) {
-            document.getElementsByClassName('gm-control-active')[1].click();
-            document.getElementsByClassName('gm-control-active')[1].click();
-            document.getElementsByClassName('gm-control-active')[1].click();
-            document.getElementsByClassName('gm-control-active')[1].click();
+            setTimeout(() => {
+              document.getElementsByClassName('gm-control-active')[1].click();
+            }, 200);
+            setTimeout(() => {
+              document.getElementsByClassName('gm-control-active')[1].click();
+            }, 400);
+            setTimeout(() => {
+              document.getElementsByClassName('gm-control-active')[1].click();
+            }, 600);
+            setTimeout(() => {
+              document.getElementsByClassName('gm-control-active')[1].click();
+            }, 800);
+
           }
-        }, 2000)
+        }, 1000)
 
         el('location').innerHTML = res.data.results[0].formatted_address;
         if (reportData.type === 'others') {
@@ -418,7 +427,7 @@ const cardSelect = (uid) => {
         } else {
           el('hazard-type').innerHTML = reportData.type;
         }
-
+        el('report-time').innerHTML = moment(reportData.timestamp).fromNow()
         el('report-details').innerHTML = reportData.details;
         el('geolocation').innerHTML = '';
 

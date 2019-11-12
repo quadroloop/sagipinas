@@ -18,14 +18,16 @@ function Dashboard(props) {
 
 
   const loadFeed = () => {
-    document.getElementById('feed').innerHTML = '';
-    axios.get('https://sagipinas.herokuapp.com/incidents')
-      .then(res => {
-        localStorage.incidents = JSON.stringify(res.data)
+    if (document.contains(document.getElementById('feed'))) {
+      document.getElementById('feed').innerHTML = '';
+      axios.get('https://sagipinas.herokuapp.com/incidents')
+        .then(res => {
+          localStorage.incidents = JSON.stringify(res.data)
 
-        res.data.reverse().forEach(feed => {
-          if (feed.status === 'unverified') {
-            document.getElementById('feed').innerHTML += `
+          res.data.reverse().forEach(feed => {
+            if (feed.status === 'unverified') {
+              if (document.contains(document.getElementById('feed'))) {
+                document.getElementById('feed').innerHTML += `
             <div class="card" onclick="cardSelect('${feed.uid}')" id="${feed.uid}">
             <span class="pulseDot"></span>
           <span class="tag"><i class="fa fa-warning"></i> ${feed.type === 'others' ? "Accident" : feed.type}</span>
@@ -35,10 +37,11 @@ function Dashboard(props) {
              </p>
             </div>
             `
-          }
+              }
+            }
+          })
         })
-      })
-
+    }
   }
 
   socket.on("report", (data) => {

@@ -12,13 +12,16 @@ const InfoCard = () => {
       title: "Confirm Verification",
       text: `Are you sure you want to confirm this Incident, doing so would notify the user
       the rescue autorities are on the way to their location.`,
+      icon: 'info',
       showCancelButton: true,
     })
       .then(res => {
-        socket.emit("verifyReport", ({ uid: localStorage.uid, id: parseInt(localStorage.psid) }))
-        document.getElementById('infoCard').style.display = "none";
-        document.getElementById(localStorage.uid).remove();
-        swal.fire("Report Verified!", "The report has been successfully verified. you can view this actions in the incidents tab.", "success");
+        if (res.value) {
+          socket.emit("verifyReport", ({ uid: localStorage.uid, id: parseInt(localStorage.psid) }))
+          document.getElementById('infoCard').style.display = "none";
+          document.getElementById(localStorage.uid).remove();
+          swal.fire("Report Verified!", "The report has been successfully verified. you can view this actions in the incidents tab.", "success");
+        }
       })
   }
 

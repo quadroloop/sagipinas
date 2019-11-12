@@ -34,6 +34,28 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   flex-direction: column;
 }
 
+button{
+  background: linear-gradient(to right, rgb(0, 153, 255),rgb(24, 38, 165));
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.4s;
+
+  i{
+    margin-right: 4px;
+  }
+
+  &:hover{
+    box-shadow: 0 20px 25px -11px rgba(8, 77, 187, 0.459);
+    transition: 0.4s;
+  }
+}
+
 // Sidebar
 
 .sidebar {
@@ -387,16 +409,6 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 
   button{
-    background: linear-gradient(to right, rgb(0, 153, 255),rgb(24, 38, 165));
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-    padding: 10px;
-    font-size: 15px;
-    border: 0px;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: 0.4s;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -421,7 +433,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     width: 100%;
     overflow: hidden;
     overflow-y: auto;
-    padding-bottom: 90px;yarn
+    padding-bottom: 90px;
 
     .detail-text{
       color: $primary;
@@ -493,6 +505,7 @@ $transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 
 .card-row {
   display: flex;
+  flex-direction: row;
 }
 
 .card-stat{
@@ -692,5 +705,82 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
       color: rgb(63, 168, 238);
       font-weight: 700;
     }
+  }
+}
+
+.news-page{
+  padding: 10px 40px;
+  width: 100%;
+
+
+  .article-from{
+    margin: 0 auto;
+  }
+
+  .sub-title{
+    color: grey;
+  }
+
+  .divider{
+    margin-top: -15px;
+    height: 5px;
+    width: 40px;
+    background: rgb(86, 167, 221)
+  }
+
+  .publish{
+    display: inline-block;
+    border-radius: 10px;
+    background: #ffff;
+    box-shadow: $box-shadow;
+    padding: 20px 20px;
+
+    .article-image{
+      width: 100%;
+      border-radius: 10px;
+      height: 240px;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  .fill{
+    width: 100%;
+    background: red;
+    height: 100px;
+  }
+
+  .news-form{
+
+    margin-left: 20px;
+
+    span{
+      color: #2F46B3;
+    }
+
+    input{
+      margin: 10px 0;
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 2px solid #ddd;
+    }
+
+  }
+}
+
+
+.settings-page{
+  padding: 10px 40px;
+
+  .sub-title{
+    color: grey;
+  }
+
+  .divider{
+    margin-top: -15px;
+    height: 4px;
+    width: 40px;
+    background: rgb(86, 167, 221)
   }
 }
