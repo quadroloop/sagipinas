@@ -410,13 +410,13 @@ const cardSelect = (uid) => {
             }, 200);
             setTimeout(() => {
               document.getElementsByClassName('gm-control-active')[1].click();
-            }, 400);
+            }, 300);
+            setTimeout(() => {
+              document.getElementsByClassName('gm-control-active')[1].click();
+            }, 500);
             setTimeout(() => {
               document.getElementsByClassName('gm-control-active')[1].click();
             }, 600);
-            setTimeout(() => {
-              document.getElementsByClassName('gm-control-active')[1].click();
-            }, 800);
 
           }
         }, 1000)

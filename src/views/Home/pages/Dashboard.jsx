@@ -54,6 +54,10 @@ function Dashboard(props) {
 
     loadFeed();
 
+    if (!localStorage.sound) {
+      localStorage.sound = "enabled";
+    }
+
     // if (document.contains(document.getElementById('renderMap'))) {
     //   setTimeout(() => {
     //     document.getElementById("renderMap").click();

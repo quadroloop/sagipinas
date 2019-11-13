@@ -784,6 +784,21 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
     width: 40px;
     background: rgb(86, 167, 221)
   }
+
+  hr{
+    border-top: 0.2px solid #ddd;
+  }
+
+
+  .about{
+    max-width: 700px;
+    line-height: 25px;
+
+
+    strong{
+      color: #2F46B3;
+    }
+  }
 }
 
 .article-footer{
@@ -815,6 +830,8 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
     color: rgb(135, 136, 139);
     font-size: 14px;
   }
+
+  display: none;
 }
 
 
@@ -868,13 +885,25 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
     border: 2px solid $primary;
     box-shadow: $box-shadow-card;
   }
+
+
 }
 
 // table css
 .table-delta{
 
+  .news{
+    margin-top: 30px;
+  }
+
+  .prev-img{
+    width: 120px;
+    border-radius: 3px;
+    box-shadow: $box-shadow-card;
+  }
+
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
 
  .reject-btn{
   background: linear-gradient(to right, #c94b4b, #4b134f);
@@ -944,10 +973,6 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
     }
 
     table td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
       content: attr(data-label);
       float: left;
       font-weight: bold;
@@ -959,4 +984,20 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
     }
   }
 
+}
+
+.text-rejected{
+  color: rgb(224, 65, 65);
+}
+
+.text-verified{
+  color: rgb(90, 170, 117);
+}
+
+.text-pending{
+  color: rgb(255, 166, 0);
+}
+
+.text-total{
+  color: rgb(28, 114, 212);
 }

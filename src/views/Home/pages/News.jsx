@@ -42,6 +42,34 @@ function News(props) {
 
 
 
+      <div className="table-delta">
+
+
+
+        <input type="text" className="search-bar news" placeholder="Search Articles" />
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Title</th>
+              <th scope="col">Body</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Image"><img src="https://live.staticflickr.com/1898/43724723305_d24121226d_b.jpg" alt="prev" className="prev-img" /></td>
+              <td data-label="Title">11/10/2019</td>
+              <td data-label="Body">1:20 PM</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+
+
     </div>
 
 
