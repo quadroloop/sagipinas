@@ -968,7 +968,7 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
     table td {
       border-bottom: 1px solid #ddd;
       display: block;
-      font-size: .5em;
+      font-size: .7em;
       text-align: right;
     }
 
@@ -1004,4 +1004,22 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
 
 #notif{
   display: none;
+}
+
+.incidents-page{
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.category{
+  text-transform: capitalize;
+}
+
+.no-action{
+  background: linear-gradient(to right, #4bc9b8, #1f5fd4);
+}
+
+#reject-report{
+ display: none;
 }

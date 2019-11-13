@@ -8,7 +8,9 @@ const socket = io('https://sagipinas.herokuapp.com');
 
 socket.on("report", (data) => {
   document.getElementById('alert-btn').click();
-  document.getElementById('notif').play();
+  if (localStorage.sound === 'enabled') {
+    document.getElementById('notif').play();
+  }
 })
 
 const Notif = () => {

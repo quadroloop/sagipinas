@@ -469,3 +469,8 @@ const notify = () => {
   }).showToast();
 }
 
+const rejectReport = (uid) => {
+  localStorage.uid = uid;
+  el('reject-report').click();
+}
+
