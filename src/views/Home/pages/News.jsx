@@ -1,9 +1,91 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Row, Col } from 'react-bootstrap';
 import rocket from '../../../assets/img/launch-rocket.png'
-
+import axios from 'axios';
+import swal from 'sweetalert2';
 
 function News(props) {
+
+  const el = (element) => {
+    return document.getElementById(element);
+  }
+
+  function searchNews() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("search1");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("news-table");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].innerText.replace(/(\r\n|\n|\r)/gm, "").replace(/\s+/g, '').toUpperCase();
+      if (td) {
+        txtValue = td;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+  const checkifPublishable = () => {
+    let img = el('imgurl').value, atitle = el('atitle').value, abody = el('abody').value;
+    if (img.trim() !== '' && img.includes('https://')) {
+      el('x-img').src = img;
+    } else {
+      el('x-img').src = 'http://savings.gov.pk/wp-content/plugins/ldd-directory-lite/public/images/noimage.png';
+    }
+
+    if (img.trim() !== '' && atitle.trim() !== '' && abody.trim() !== '') {
+      el('publish-div').style.display = 'block';
+    } else {
+      el('publish-div').style.display = 'none';
+    }
+  }
+
+  const publishPost = () => {
+    let img = el('imgurl').value, atitle = el('atitle').value, abody = el('abody').value;
+    axios.get(`https://sagipinas.herokuapp.com/addEvent?title=${atitle}&subtitle=${abody}&image_url=${img}`)
+      .then(res => {
+        swal.fire('Post Published!', "your article was published successfully", 'success');
+        el('x-img').src = 'http://savings.gov.pk/wp-content/plugins/ldd-directory-lite/public/images/noimage.png';
+        el('atitle').value = "";
+        el('abody').value = "";
+        el('imgurl').value = "";
+        el('publish-div').style.display = 'none';
+        renderNews()
+      })
+  }
+
+
+  const renderNews = () => {
+    axios.get('https://sagipinas.herokuapp.com/events')
+      .then(res => {
+        if (res.data) {
+          el('news-table').innerHTML = '';
+          res.data.forEach(news => {
+            if (document.contains(document.getElementById('news-table'))) {
+              el('news-table').innerHTML += `
+              <tr>
+              <td data-label="Image"><img src="${news.image_url}" alt="prev" class="prev-img" /></td>
+              <td data-label="Title">${news.title}</td>
+              <td data-label="Body">${news.subtitle}</td>
+            </tr>
+           `
+            }
+          })
+        }
+      })
+  }
+
+
+  useEffect(() => {
+    renderNews();
+  })
+
+
   return (
     <div className="news-page">
       <h1><i className="fa fa-file-text-o"></i> News</h1>
@@ -15,16 +97,22 @@ function News(props) {
       <div className="publish">
         <Row>
           <Col md={5}>
-            <img className="article-image" alt="img" src="http://savings.gov.pk/wp-content/plugins/ldd-directory-lite/public/images/noimage.png" />
+            <img className="article-image" id='x-img' alt="img" src="http://savings.gov.pk/wp-content/plugins/ldd-directory-lite/public/images/noimage.png" />
           </Col>
           <Col md={7}>
             <div className="news-form">
               <span><i className="fa fa-image"></i> Image Link</span><br></br>
-              <input type="text" placeholder="Image URL" /><br />
+              <input type="text" id="imgurl" placeholder="Image URL" onChange={() => {
+                checkifPublishable();
+              }} /><br />
               <span><i className="fa fa-list"></i> Article Title</span><br></br>
-              <input type="text" placeholder="Title" /><br />
+              <input type="text" id="atitle" placeholder="Title" onChange={() => {
+                checkifPublishable();
+              }} /><br />
               <span><i className="fa fa-list"></i> Body</span><br></br>
-              <input type="text" placeholder="Article Body" /><br />
+              <input type="text" id="abody" placeholder="Article Body" onChange={() => {
+                checkifPublishable();
+              }} /><br />
             </div>
           </Col>
         </Row>
@@ -33,11 +121,13 @@ function News(props) {
 
 
 
-      <div className="publish-button animated bounceIn">
+      <div className="publish-button animated bounceIn" id="publish-div">
         <center>
           <img src={rocket} alt="rocket" />
           <p>All set! it seems that your all good to publish this post!</p>
-          <button><i className="fa fa-file-text-o"></i> Publish Post</button>
+          <button onClick={() => {
+            publishPost();
+          }}><i className="fa fa-file-text-o"></i> Publish Post</button>
         </center>
       </div>
 
@@ -47,7 +137,9 @@ function News(props) {
 
 
 
-        <input type="text" className="search-bar news" placeholder="Search Articles" />
+        <input type="text" className="search-bar news" id="search1" placeholder="Search Articles" onKeyUp={() => {
+          searchNews();
+        }} />
 
         <table>
           <thead>
@@ -57,13 +149,7 @@ function News(props) {
               <th scope="col">Body</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td data-label="Image"><img src="https://live.staticflickr.com/1898/43724723305_d24121226d_b.jpg" alt="prev" className="prev-img" /></td>
-              <td data-label="Title">11/10/2019</td>
-              <td data-label="Body">1:20 PM</td>
-            </tr>
-
+          <tbody id='news-table'>
           </tbody>
         </table>
 

@@ -738,6 +738,7 @@ $dot-shadow: rgba(223, 43, 19, 0.849);
 
     .article-image{
       width: 100%;
+      max-width: 490px;
       border-radius: 10px;
       height: 240px;
       box-shadow: $box-shadow;

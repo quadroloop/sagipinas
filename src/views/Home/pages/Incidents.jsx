@@ -119,7 +119,7 @@ function Incidents(props) {
 
       <button onClick={() => { rejectReport() }} id="reject-report"></button>
 
-      <input type="text" id="search1" className="search-bar" placeholder="Search list" onKeyUp={() => {
+      <input type="text" id="search1" className="search-bar" placeholder="Search Incidents" onKeyUp={() => {
         searchIncidents()
       }} />
 

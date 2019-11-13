@@ -58,11 +58,11 @@ function Dashboard(props) {
       localStorage.sound = "enabled";
     }
 
-    // if (document.contains(document.getElementById('renderMap'))) {
-    //   setTimeout(() => {
-    //     document.getElementById("renderMap").click();
-    //   }, 1000)
-    // }
+    if (document.contains(document.getElementById('renderMap'))) {
+      setTimeout(() => {
+        document.getElementById("renderMap").click();
+      }, 1000)
+    }
 
   }, [])
 
