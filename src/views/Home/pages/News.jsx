@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 import rocket from '../../../assets/img/launch-rocket.png'
 
+
 function News(props) {
   return (
     <div className="news-page">

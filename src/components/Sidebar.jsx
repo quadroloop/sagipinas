@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom'
 import {
-  faSignOutAlt,
+  // faSignOutAlt,
   faMapMarkedAlt,
   faNewspaper,
   faCog,
@@ -12,6 +11,8 @@ import {
   faAngleDoubleRight,
 } from '@fortawesome/free-solid-svg-icons'
 import logo from '../assets/img/logo.png'
+import Notif from './Notify';
+
 
 import NavItem from './NavItem'
 
@@ -49,15 +50,17 @@ function Sidebar(props) {
           </NavItem>
         </ul>
 
+        <Notif />
+
         <ul className="sidebar-nav bottom">
-          <li>
+          {/* <li>
             <Link>
               <Fa icon={faSignOutAlt} />
               <span>
                 Logout
               </span>
             </Link>
-          </li>
+          </li> */}
           <li className="collapse-toggle" onClick={() => setCollapsed(!collapsed)}>
             <Fa icon={collapsed ? faAngleDoubleRight : faAngleDoubleLeft} />
           </li>

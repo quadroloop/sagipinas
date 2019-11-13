@@ -40,7 +40,7 @@ function Settings(props) {
           <strong>SagiPinas</strong> is a Web platform for disaster response and risk reduction, which leverages
           the free availability of Facebook Messenger and uses it as a bridge to allow victims of disasters and accidents
           to reach out and reveal their location without requiring full access of the internet. This system is for demonstration puroposes only.
-          And is the official entry for Hangat Hackathon 2019.
+          And is the official entry for <strong>Hangat Hackathon 2019 : The Philippines Debugged</strong>.
         </p>
         <p>Created by: <strong>Hybrid Theory</strong></p>
         <ul>

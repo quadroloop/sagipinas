@@ -456,3 +456,16 @@ const cardSelect = (uid) => {
     })
 }
 
+const notify = () => {
+  Toastify({
+    text: "New Incident Report!",
+    duration: 4000,
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: 'right', // `left`, `center` or `right`
+    backgroundColor: "linear-gradient(to right, #cb2d3e, #ff6a00)",
+    stopOnFocus: true // Prevents dismissing of toast on hover
+  }).showToast();
+}
+
