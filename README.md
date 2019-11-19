@@ -19,10 +19,10 @@ __Background:__
  - Incident reports sent to the messenger chatbot are instantly sent to the admin dashboard used by first responders or rescue authorities, where they can review the report and respond if necessary.
 
 ### Features:
-1.) __No full internet access required__ - for the users' end, (victims), the platform uses free data from facebook to operate.
-2.) __See evacuation areas__ Users can also send their current location to see the nearest possible evacuation areas
-3.) __Get Informed__ - Users can also read news and advisories from the platform.
-4.)__Realtime Interaction__ - Uses web sockets for real-time interaction
+- 1.) __No full internet access required__ - for the users' end, (victims), the platform uses free data from facebook to    operate.
+- 2.) __See evacuation areas__ Users can also send their current location to see the nearest possible evacuation areas
+- 3.) __Get Informed__ - Users can also read news and advisories from the platform.
+- 4.)__Realtime Interaction__ - Uses web sockets for real-time interaction
 
 #### Created By:
 Team Name: __Hybrid Theory__
