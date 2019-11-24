@@ -7,33 +7,35 @@ function Home(props) {
   return (
     <div className="content-container">
       <div className="gradient-half">
-      </div>
+        <div className="logo-banner p-5">
+          <h4><img src={logo} className="logo" alt="sagip-logo" />
+            Sagi<span>Pin</span>as
+        </h4>
+        </div>
+        <div className="page">
+          <div className="row my-2">
 
-      <div className="page">
-        <div className="row my-4">
+            <div className="col-md-5">
+              <h1>A disaster risk response platform for everyone</h1>
+              <p><span className="text-warning">SagiPinas 1.0</span> is under development.</p>
+              <button class="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
+            </div>
 
-          <div className="col-md-5">
-            <h1>A disaster risk response platform for everyone</h1>
-            <p><span className="text-warning">SagiPinas 1.0</span> is under development.</p>
-            <button class="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
-          </div>
+            <div className="col-md-6">
+              <div className="preview">
+                <img src={app1} className="app fade-in-bottom img-fluid" alt="app" />
+              </div>
 
-          <div className="col-md-6">
-            <div className="preview">
-              <img src={app1} className="app fade-in-bottom" alt="app" />
             </div>
 
           </div>
-
         </div>
+
       </div>
 
 
-      <div className="logo-banner p-5">
-        <h4><img src={logo} className="logo" alt="sagip-logo" />
-          Sagi<span>Pin</span>as
-        </h4>
-      </div>
+
+
 
       <button class="btn-hover color-9 btn-learn">LEARN MORE</button>
 
@@ -44,8 +46,8 @@ function Home(props) {
       <div className="body-page">
 
         <div className="row mb-4">
-          <div className="col-md-7">
-            <img src={app2} className="app" alt="img-app" />
+          <div className="col-md-7 app-2">
+            <img src={app2} className="app img-fluid" alt="img-app" />
           </div>
           <div className="col-md-4">
             <h2>About the Project</h2>
