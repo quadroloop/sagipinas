@@ -1,4 +1,6 @@
 import React from 'react'
+import Typed from 'react-typed'
+
 import logo from '../../assets/img/logo.png';
 import app1 from '../../assets/img/app1.png';
 import app2 from '../../assets/img/app2.png';
@@ -15,8 +17,18 @@ function Home(props) {
         <div className="page">
           <div className="row my-2">
 
-            <div className="col-md-5">
-              <h1>A disaster risk response platform for everyone</h1>
+            <div className="col-md-5 text-white">
+              <h1>
+                A disaster risk response platform for{' '}
+                <Typed
+                  loop
+                  typeSpeed={100}
+                  backSpeed={50}
+                  smartBackspace={false}
+                  strings={['everyone', 'everytwo', 'everythree']}
+                  className="typed-text"
+                />
+              </h1>
               <p><span className="text-warning">SagiPinas 1.0</span> is under development.</p>
               <button className="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
             </div>
