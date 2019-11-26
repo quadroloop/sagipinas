@@ -4,6 +4,7 @@ import Typed from 'react-typed'
 import logo from '../../assets/img/logo.png';
 import app1 from '../../assets/img/app1.png';
 import app2 from '../../assets/img/app2.png';
+import angatio from '../../assets/img/angat.png';
 
 function Home(props) {
   return (
@@ -25,24 +26,32 @@ function Home(props) {
                   typeSpeed={100}
                   backSpeed={50}
                   smartBackspace={false}
-                  strings={['everyone', 'everytwo', 'everythree']}
+                  strings={['you.', 'me.', 'everyone.']}
                   className="typed-text"
                 />
               </h1>
               <p><span className="text-warning">SagiPinas 1.0</span> is under development.</p>
               <button className="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
             </div>
-
             <div className="col-md-6">
               <div className="preview">
                 <img src={app1} className="app fade-in-bottom img-fluid" alt="app" />
               </div>
-
             </div>
-
           </div>
         </div>
+      </div>
 
+
+      <div className="row mt-5 mx-5">
+        <div class="col-md-5 px-5">
+          <h2>Work towards resilience.</h2>
+          <div className="divider"></div>
+          <p className="text-muted">
+            Because in an event of a disaster, we believe that having the <b>smallest</b> chance of being
+            help is better than having no chance at all.
+          </p>
+        </div>
       </div>
 
 
@@ -66,7 +75,7 @@ function Home(props) {
             <div className="divider"></div>
             <p className="text-muted">The project aims to take leverage of available technology in order to help victims of accidents
               and evironmental disasters to call out for help  without relying on full internet connection, which gives
-              better changes of locating people who are in need of aid when disaster strikes.
+              better chances of locating people who are in need of aid.
           </p>
 
             <p className="text-muted">
@@ -90,7 +99,19 @@ function Home(props) {
         <center>
           <h2>Supported by</h2>
           <div className="divider"></div>
-          <p className="text-muted">This project is supported by the following organizations.</p>
+          <p className="text-muted">This project is supported by the following companies and organizations.</p>
+          <div className="supporters m-3">
+            <a href="https://angat.io" target="_blank" rel="noopener noreferrer">
+              <img src={angatio} alt="angat.io" className="brands" />
+            </a>
+          </div>
+          {/* <div className="row my-5">
+            <div className="col-md-3">
+              <a href="https://angat.io" target="_blank" rel="noopener noreferrer">
+                <img src={angatio} alt="angat.io" className="brands" />
+              </a>
+            </div>
+          </div> */}
         </center>
       </div>
 
