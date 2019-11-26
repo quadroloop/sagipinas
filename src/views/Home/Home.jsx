@@ -1,10 +1,11 @@
 import React from 'react'
 import Typed from 'react-typed'
-
 import logo from '../../assets/img/logo.png';
 import app1 from '../../assets/img/app1.png';
 import app2 from '../../assets/img/app2.png';
 import angatio from '../../assets/img/angat.png';
+import ReactTooltip from 'react-tooltip'
+
 
 function Home(props) {
   return (
@@ -31,7 +32,9 @@ function Home(props) {
                 />
               </h1>
               <p><span className="text-warning">SagiPinas 1.0</span> is under development.</p>
-              <button className="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
+              <button className="btn-hover color-1 join-btn" onClick={() => {
+                document.body.scrollIntoView({ behavior: 'smooth', block: 'end' })
+              }}><i className="fa fa-hashtag mr-1"></i> TALK TO US</button>
             </div>
             <div className="col-md-6">
               <div className="preview">
@@ -44,7 +47,7 @@ function Home(props) {
 
 
       <div className="row mt-5 mx-5">
-        <div class="col-md-5 px-5">
+        <div className="col-md-5 px-5">
           <h2>Work towards resilience.</h2>
           <div className="divider"></div>
           <p className="text-muted">
@@ -57,8 +60,9 @@ function Home(props) {
 
 
 
-
-      <button className="btn-hover color-9 btn-learn">LEARN MORE</button>
+      <a href="https://github.com/quadroloop/sagipinas">
+        <button className="btn-hover color-9 btn-learn">LEARN MORE</button>
+      </a>
 
 
 
@@ -85,17 +89,20 @@ function Home(props) {
 
             <p className="built-by animated fadeIn">BUILT BY:</p>
             <div className="contributors animated fadeIn">
-              <img src="https://avatars0.githubusercontent.com/u/22174665?s=460&v=4" className="contributor-avatar" alt="avatar" />
-              <img src="https://avatars3.githubusercontent.com/u/21337635?s=460&v=4" className="contributor-avatar" alt="avatar" />
-              <img src="https://avatars0.githubusercontent.com/u/29462205?s=460&v=4" className="contributor-avatar" alt="avatar" />
+              <a href="https://github.com/quadroloop" target="_blank" rel="noopener noreferrer"><img src="https://avatars0.githubusercontent.com/u/29462205?s=460&v=4" className="contributor-avatar" alt="avatar" data-tip="Bryce Narciso Mercines" /></a>
+              <a href="https://github.com/brenfreeze" target="_blank" rel="noopener noreferrer"><img src="https://avatars0.githubusercontent.com/u/22174665?s=460&v=4" className="contributor-avatar" alt="avatar" data-tip="Bren Aviador" /></a>
+              <a href="https://github.com/nardsqq" target="_blank" rel="noopener noreferrer"><img src="https://avatars3.githubusercontent.com/u/21337635?s=460&v=4" className="contributor-avatar" alt="avatar" data-tip="John Bernard Paragas" /></a>
             </div>
+
+            <ReactTooltip />
+
 
           </div>
         </div>
 
       </div>
 
-      <div className="mt-5 px-4">
+      <div className="mt-5 px-5">
         <center>
           <h2>Supported by</h2>
           <div className="divider"></div>
@@ -114,6 +121,30 @@ function Home(props) {
           </div> */}
         </center>
       </div>
+
+      <div className="talk-to-us px-5 mb-5" id="talktous">
+        <center>
+          <h2><i className="fa fa-hashtag text-info mr-2"></i >Talk to us</h2>
+          <div className="divider"></div>
+          <p className="text-muted">
+            If you are interested in contributing or simply have inquiries, simply email:
+          </p>
+          <div className="m-3">
+            <div className="email-card">
+              bryce.mercines@gmail.com
+            </div>
+          </div>
+        </center>
+      </div>
+
+
+      <hr />
+      <center>
+        <p>Made with <i className="fa fa-heart text-danger mx-2 heartbeat"></i>
+          <i className="fa fa-copyright mr-1"></i>
+          {new Date().getFullYear()} SagiPinas
+          </p>
+      </center>
 
 
 
