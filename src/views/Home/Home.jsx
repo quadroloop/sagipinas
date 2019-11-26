@@ -18,7 +18,7 @@ function Home(props) {
             <div className="col-md-5">
               <h1>A disaster risk response platform for everyone</h1>
               <p><span className="text-warning">SagiPinas 1.0</span> is under development.</p>
-              <button class="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
+              <button className="btn-hover color-1 join-btn"><i className="fa fa-github mr-1"></i> JOIN THE PROJECT</button>
             </div>
 
             <div className="col-md-6">
@@ -37,7 +37,7 @@ function Home(props) {
 
 
 
-      <button class="btn-hover color-9 btn-learn">LEARN MORE</button>
+      <button className="btn-hover color-9 btn-learn">LEARN MORE</button>
 
 
 
@@ -52,7 +52,7 @@ function Home(props) {
           <div className="col-md-4">
             <h2>About the Project</h2>
             <div className="divider"></div>
-            <p className="text-muted">The project aims to take leverage of technology to help victims of accidents
+            <p className="text-muted">The project aims to take leverage of available technology in order to help victims of accidents
               and evironmental disasters to call out for help  without relying on full internet connection, which gives
               better changes of locating people who are in need of aid when disaster strikes.
           </p>
@@ -72,6 +72,14 @@ function Home(props) {
           </div>
         </div>
 
+      </div>
+
+      <div className="mt-5 px-4">
+        <center>
+          <h2>Supported by</h2>
+          <div className="divider"></div>
+          <p className="text-muted">This project is supported by the following organizations.</p>
+        </center>
       </div>
 
 
