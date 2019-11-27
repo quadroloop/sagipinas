@@ -27,7 +27,7 @@ function Home(props) {
                   typeSpeed={100}
                   backSpeed={50}
                   smartBackspace={false}
-                  strings={['you.', 'me.', 'everyone.']}
+                  strings={['a safer country.', 'a safer future.', 'everyone.']}
                   className="typed-text"
                 />
               </h1>
@@ -51,7 +51,7 @@ function Home(props) {
           <h2>Work towards resilience.</h2>
           <div className="divider"></div>
           <p className="text-muted">
-            Because in an event of a disaster, we believe that having the <b>smallest</b> chance of being
+            Because in an event of a disaster, we believe that having the <b>smallest</b> chance of getting
             help is better than having no chance at all.
           </p>
         </div>
