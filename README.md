@@ -34,6 +34,4 @@ Members:
 
 > This project serves as the official entry for Angat.io Hackathon 2019
 
-## Project Repositories:
-Frontend: https://github.com/quadroloop/sagipinas
-API: https://github.com/quadroloop/hybrid-theory-core
+
