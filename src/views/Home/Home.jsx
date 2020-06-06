@@ -3,7 +3,7 @@ import Typed from 'react-typed'
 import logo from '../../assets/img/logo.png';
 import app1 from '../../assets/img/app1.png';
 import app2 from '../../assets/img/app2.png';
-import angatio from '../../assets/img/angat.png';
+// import angatio from '../../assets/img/angat.png';
 import ReactTooltip from 'react-tooltip'
 
 
@@ -87,12 +87,12 @@ function Home(props) {
               causing hundred of casualties and putting hundreds of lives at risk.
           </p>
 
-            <p className="built-by animated fadeIn">BUILT BY:</p>
+            {/* <p className="built-by animated fadeIn">BUILT BY:</p>
             <div className="contributors animated fadeIn">
               <a href="https://github.com/quadroloop" target="_blank" rel="noopener noreferrer"><img src="https://avatars0.githubusercontent.com/u/29462205?s=460&v=4" className="contributor-avatar" alt="avatar" data-tip="Bryce Narciso Mercines" /></a>
               <a href="https://github.com/brenfreeze" target="_blank" rel="noopener noreferrer"><img src="https://avatars0.githubusercontent.com/u/22174665?s=460&v=4" className="contributor-avatar" alt="avatar" data-tip="Bren Aviador" /></a>
               <a href="https://github.com/nardsqq" target="_blank" rel="noopener noreferrer"><img src="https://avatars3.githubusercontent.com/u/21337635?s=460&v=4" className="contributor-avatar" alt="avatar" data-tip="John Bernard Paragas" /></a>
-            </div>
+            </div> */}
 
             <ReactTooltip />
 
@@ -102,16 +102,16 @@ function Home(props) {
 
       </div>
 
-      <div className="mt-5 px-5">
+      <div className="mt-5 py-4">
         <center>
-          <h2>Supported by</h2>
+          {/* <h2>Supported by</h2>
           <div className="divider"></div>
           <p className="text-muted">This project is supported by the following companies and organizations.</p>
           <div className="supporters m-3">
             <a href="https://angat.io" target="_blank" rel="noopener noreferrer">
               <img src={angatio} alt="angat.io" className="brands" />
             </a>
-          </div>
+          </div> */}
           {/* <div className="row my-5">
             <div className="col-md-3">
               <a href="https://angat.io" target="_blank" rel="noopener noreferrer">
@@ -122,7 +122,7 @@ function Home(props) {
         </center>
       </div>
 
-      <div className="talk-to-us px-5 mb-5" id="talktous">
+      <div className="talk-to-us px-5 mb-5 mt-5" id="talktous">
         <center>
           <h2><i className="fa fa-hashtag text-info mr-2"></i >Talk to us</h2>
           <div className="divider"></div>
