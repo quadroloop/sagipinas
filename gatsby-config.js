@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `An open disaster risk response platform`,
-    description: ``,
+    description: `This is a simple website`,
     author: `@quadroloop`,
   },
   plugins: [

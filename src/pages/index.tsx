@@ -12,6 +12,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `700px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <p>I wonder how to edit this is wierd and we don't know how it really works</p>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
