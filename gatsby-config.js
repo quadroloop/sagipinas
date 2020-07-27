@@ -4,6 +4,9 @@ module.exports = {
     description: `This is a simple website`,
     author: `@quadroloop`,
   },
+
+
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -27,6 +30,30 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `testdataX`,
+        fieldName: `testData`,
+        url: `https://swapi.dev/api/people/`
+      },
+    },
+
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: "https://swapi.dev/api/people",
+        rootKey: "results",
+        schemas: {
+          results: `
+             name: String
+            `
+        }
+      }
+    },
+
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
