@@ -5,8 +5,6 @@ module.exports = {
     author: `@quadroloop`,
   },
 
-
-
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -31,14 +29,14 @@ module.exports = {
       },
     },
 
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        typeName: `testdataX`,
-        fieldName: `testData`,
-        url: `https://swapi.dev/api/people/`
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-graphql`,
+    //   options: {
+    //     typeName: `testdataX`,
+    //     fieldName: `testData`,
+    //     url: `https://swapi.dev/api/people/`
+    //   },
+    // },
 
     {
       resolve: "gatsby-source-custom-api",
