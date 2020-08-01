@@ -39,7 +39,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -56,13 +56,14 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero hero--primary hero-banner', styles.heroBanner)}>
         <div className="container">
+          <img src="/img/sagipinas-logo-transparent.png" alt="SagiPinas Logo" className="banner-logo" />
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
@@ -75,6 +76,7 @@ function Home() {
               Get Started
             </Link>
           </div>
+          <img src="https://mist.now.sh/mist/v1-app.png" alt="Sagipinasa V1" className="app-screenshot" />
         </div>
       </header>
       <main>

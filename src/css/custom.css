@@ -23,3 +23,24 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.hero-banner {
+  background: linear-gradient(rgba(22, 22, 110, 0.575), rgba(17, 17, 221, 0.438)), url("/img/map.png");
+  background-size: cover;
+  color: #fff !important;
+}
+
+.hero-banner a {
+  color: rgb(65, 198, 238) !important;
+}
+
+.banner-logo {
+  width: 50px;
+}
+
+.app-screenshot {
+  margin-top: 50px;
+  margin-bottom: -250px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 15px 1px rgba(48, 93, 190, 0.795);
+}
