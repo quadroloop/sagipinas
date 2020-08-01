@@ -40,7 +40,10 @@ body {
   margin-left: 60px;
   margin-top: 20px;
   margin-bottom: -200px;
-  box-shadow: -1px 12px 50px 8px rgba(15, 73, 189, 0.64);
+  // box-shadow: -1px 12px 50px 8px rgba(15, 73, 189, 0.64);
+  box-shadow: -1px 21px 42px -9px rgba(93, 155, 232, 0.63);
+
+
 }
 
 * {
@@ -253,11 +256,11 @@ body {
   border-radius: 10px;
   background: url('../assets/img/mobile.jpg');
   background-size: cover;
-  box-shadow: -1px 12px 50px 8px rgba(15, 73, 189, 0.64);
   position: absolute;
   right: 100px;
   top: 300px;
   animation-delay: 400ms;
+  box-shadow: -1px 21px 42px -9px rgba(93, 155, 232, 0.63);
 }
 
 @media (max-width: 1180px) {
