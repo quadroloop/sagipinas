@@ -1,18 +1,19 @@
 module.exports = {
+  plugins: ['docusaurus-plugin-sass'],
   title: 'SagiPinas',
   tagline: 'An open-source disaster risk response platform',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/logo.png',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'SagiPinas', // Usually your GitHub org/user name.
   projectName: 'sagipinas', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'SagiPinas',
       logo: {
         alt: 'SagiPinas Logo',
-        src: 'img/logo.png',
+        src: 'img/sagipinas-logo-transparent.png',
       },
       items: [
         {
@@ -98,7 +99,7 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       },
     ],

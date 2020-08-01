@@ -6,7 +6,7 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
@@ -22,17 +22,52 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+} */
+
+.navbar-sidebar {
+  background: rgb(24, 24, 90);
+}
+
+.navbar {
+  background: rgb(24, 24, 90);
+
+  strong {
+    color: #fff;
+  }
+
+  a {
+    color: #fff !important;
+
+    &:hover {
+      color: rgb(36, 206, 206) !important;
+    }
+
+    &.navbar__link--active {
+      color: rgb(36, 206, 206) !important;
+    }
+  }
+
+
 }
 
 .hero-banner {
   background: linear-gradient(rgba(22, 22, 110, 0.575), rgba(17, 17, 221, 0.438)), url("/img/map.png");
   background-size: cover;
   color: #fff !important;
+
+  .button {
+    color: rgb(65, 198, 238) !important;
+    transition: 0.3s;
+
+
+    &:hover {
+      color: rgb(31, 52, 148) !important;
+      box-shadow: 1px 0px 15px 1px rgba(232, 236, 243, 0.795);
+      transition: 0.3s;
+    }
+  }
 }
 
-.hero-banner a {
-  color: rgb(65, 198, 238) !important;
-}
 
 .banner-logo {
   width: 50px;
@@ -42,5 +77,5 @@
   margin-top: 50px;
   margin-bottom: -250px;
   border-radius: 20px;
-  box-shadow: 1px 0px 15px 1px rgba(48, 93, 190, 0.795);
+  box-shadow: 1px 0px 15px 1px rgba(85, 190, 223, 0.795);
 }

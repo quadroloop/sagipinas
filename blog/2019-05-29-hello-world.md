@@ -4,7 +4,7 @@ title: Hello
 author: Bryce Mercines
 author_title: Maintainer of SagiPinas
 author_url: https://github.com/quadroloop
-author_image_url: https://avatars1.githubusercontent.com/u/17883920?s=460&v=4
+author_image_url: https://avatars0.githubusercontent.com/u/29462205?s=460&u=2dfd08d765296669d4fc10ebecfc80a424298b75&v=4
 tags: [hello, docusaurus]
 ---
 
