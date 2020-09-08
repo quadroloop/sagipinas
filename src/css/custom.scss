@@ -46,19 +46,17 @@
       color: rgb(36, 206, 206) !important;
     }
   }
-
-
 }
 
 .hero-banner {
-  background: linear-gradient(rgba(22, 22, 110, 0.575), rgba(17, 17, 221, 0.438)), url("/img/map.png");
+  background: linear-gradient(rgba(22, 22, 110, 0.575), rgba(6, 6, 88, 0.438)),
+    url("/img/map.png");
   background-size: cover;
   color: #fff !important;
 
   .button {
     color: rgb(65, 198, 238) !important;
     transition: 0.3s;
-
 
     &:hover {
       color: rgb(31, 52, 148) !important;
@@ -67,7 +65,6 @@
     }
   }
 }
-
 
 .banner-logo {
   width: 50px;
@@ -78,4 +75,18 @@
   margin-bottom: -250px;
   border-radius: 20px;
   box-shadow: 1px 0px 15px 1px rgba(85, 190, 223, 0.795);
+}
+
+.hero__title {
+  font-weight: 250;
+  span {
+    color: rgba(245, 200, 104, 0.925) !important;
+  }
+}
+
+.content-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 0px;
 }
