@@ -18,7 +18,7 @@ const features = [
     ),
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <>Efficient</>,
     imageUrl: "img/undraw_docusaurus_tree.svg",
     description: (
       <>
@@ -28,7 +28,17 @@ const features = [
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <>Reliable</>,
+    imageUrl: "img/undraw_docusaurus_react.svg",
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+  {
+    title: <>Scalable</>,
     imageUrl: "img/undraw_docusaurus_react.svg",
     description: (
       <>
@@ -39,6 +49,11 @@ const features = [
   },
   {
     title: <>Open Source</>,
+    imageUrl: "img/undraw_docusaurus_react.svg",
+    description: <>Solutions the matter most should be open for improvement.</>,
+  },
+  {
+    title: <>Powerful</>,
     imageUrl: "img/undraw_docusaurus_react.svg",
     description: <>Solutions the matter most should be open for improvement.</>,
   },
