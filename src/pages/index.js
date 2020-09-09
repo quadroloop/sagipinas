@@ -9,7 +9,7 @@ import styles from "./styles.module.css";
 const features = [
   {
     title: <>Realtime</>,
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    imageUrl: "img/realtime.png",
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: <>Efficient</>,
-    imageUrl: "img/undraw_docusaurus_tree.svg",
+    imageUrl: "img/efficient.png",
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -29,7 +29,7 @@ const features = [
   },
   {
     title: <>Reliable</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    imageUrl: "img/reliable.png",
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -39,7 +39,7 @@ const features = [
   },
   {
     title: <>Scalable</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    imageUrl: "img/scalable.png",
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -49,12 +49,12 @@ const features = [
   },
   {
     title: <>Open Source</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    imageUrl: "img/open-source.png",
     description: <>Solutions the matter most should be open for improvement.</>,
   },
   {
-    title: <>Powerful</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: <>Informative</>,
+    imageUrl: "img/informative.png",
     description: <>Solutions the matter most should be open for improvement.</>,
   },
 ];

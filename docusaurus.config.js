@@ -79,6 +79,14 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/SagiPinas",
             },
+            {
+              label: "Icons by Eucalyp",
+              href: "https://www.flaticon.com/authors/eucalyp",
+            },
+            {
+              label: "Icons by FlatIcon",
+              href: "https://www.flaticon.com/",
+            },
           ],
         },
       ],
