@@ -115,6 +115,34 @@ function Home() {
       </header>
       <main>
         <div className="content-heading">
+          <h1>About</h1>
+        </div>
+
+        <div className="section-container">
+          <div className="content">
+            <div>
+              <img
+                src="https://i.ytimg.com/vi/kbbq8Fq6sBE/maxresdefault.jpg"
+                alt="about-picture"
+              />
+            </div>
+            <div className="text-content">
+              <p>
+                Lorem Ipsum dolor simet black black Lorem Ipsum dolor simet
+                black blackLorem Ipsum dolor simet black blackLorem Ipsum dolor
+                simet black blackLorem Ipsum dolor simet black black Lorem Ipsum
+                dolor simet black black Lorem Ipsum dolor simet black black
+                Lorem Ipsum dolor simet black black Lorem Ipsum dolor simet
+                black black Lorem Ipsum dolor simet black black Lorem Ipsum
+                dolor simet black black Lorem Ipsum dolor simet black black
+                Lorem Ipsum dolor simet black black Lorem Ipsum dolor simet
+                black black
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="content-heading">
           <h1>Features</h1>
         </div>
 

@@ -90,3 +90,24 @@
   justify-content: center;
   padding: 50px 0px 0px;
 }
+
+.section-container {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      width: 500px;
+    }
+
+    .text-content {
+      margin-left: 50px;
+      width: 450px;
+    }
+  }
+}
