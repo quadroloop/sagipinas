@@ -32,60 +32,54 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      // logo: {
-      //   alt: 'SagiPinas Logo',
-      //   src: 'img/sagipinas-logo-transparent.png',
-      //   href: '/',
-      // },
+      logo: {
+        alt: "SagiPinas Logo",
+        src: "img/sagipinas-logo-transparent.png",
+        href: "/",
+      },
       links: [
         {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
+              label: "General",
               to: "docs/",
             },
-            {
-              label: "Second Doc",
-              to: "docs/doc2/",
-            },
           ],
         },
+
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
+          title: "Quick Links",
           items: [
             {
               label: "Blog",
               to: "blog",
             },
             {
+              label: "Hydraean",
+              to: "https://github.com/Hydraean",
+            },
+            {
+              label: "Seantinel Documentation",
+              to: "https://github.com/Hydraean/hydra",
+            },
+            {
               label: "GitHub",
               href: "https://github.com/SagiPinas",
+            },
+          ],
+        },
+
+        {
+          title: "Credits",
+          items: [
+            {
+              label: "Icons by FlatIcon",
+              href: "https://www.flaticon.com/",
             },
             {
               label: "Icons by Eucalyp",
               href: "https://www.flaticon.com/authors/eucalyp",
-            },
-            {
-              label: "Icons by FlatIcon",
-              href: "https://www.flaticon.com/",
             },
           ],
         },
