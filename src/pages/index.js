@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import ProjectSlider from "../components/ProjectSliders";
 
 const features = [
   {
@@ -115,14 +116,14 @@ function Home() {
       </header>
       <main>
         <div className="content-heading">
-          <h1>About</h1>
+          <h1>About the Project</h1>
         </div>
 
         <div className="section-container">
           <div className="content">
             <div>
               <img
-                src="https://i.ytimg.com/vi/kbbq8Fq6sBE/maxresdefault.jpg"
+                src="https://www.fabbaloo.com/wp-content/uploads/2020/06/enclosure-cover.jpg"
                 alt="about-picture"
               />
             </div>
@@ -157,6 +158,8 @@ function Home() {
             </div>
           </section>
         )}
+
+        <ProjectSlider />
       </main>
     </Layout>
   );
