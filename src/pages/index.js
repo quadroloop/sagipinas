@@ -67,7 +67,7 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Building technologies for nationwide resilience."
-      featureImage="img/v1-app.png"
+      ogImage="img/v1-app.png"
     >
       <header
         className={clsx("hero hero--primary hero-banner", styles.heroBanner)}
