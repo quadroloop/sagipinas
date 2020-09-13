@@ -61,7 +61,8 @@ module.exports = {
             },
             {
               label: "Seantinel Documentation",
-              to: "https://github.com/Hydraean/hydra",
+              to:
+                "https://docs.google.com/document/d/1WA-s12B3Y8vTE4WQVeguRMCxdUF_XfPRMaNKsNOTw0c/edit#heading=h.z6ne0og04bp5",
             },
             {
               label: "GitHub",

@@ -11,42 +11,27 @@ const features = [
   {
     title: <>Realtime</>,
     imageUrl: "img/realtime.png",
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    description: <>Supports data processing and visualization in Realtime</>,
   },
   {
     title: <>Efficient</>,
     imageUrl: "img/efficient.png",
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    description: <>Built with efficiency in mind.</>,
   },
   {
     title: <>Reliable</>,
     imageUrl: "img/reliable.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Constantly tested and developed to withstand large amounts of data
+        processing and handle its operations reliably.
       </>
     ),
   },
   {
     title: <>Scalable</>,
     imageUrl: "img/scalable.png",
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    description: <>Easily adaptable and scalable across different platforms</>,
   },
   {
     title: <>Open Source</>,
@@ -122,22 +107,27 @@ function Home() {
         <div className="section-container">
           <div className="content">
             <div>
-              <img
-                src="https://www.fabbaloo.com/wp-content/uploads/2020/06/enclosure-cover.jpg"
-                alt="about-picture"
-              />
+              <img src="img/about_sagipinas.png" alt="about-picture" />
             </div>
             <div className="text-content">
               <p>
-                Lorem Ipsum dolor simet black black Lorem Ipsum dolor simet
-                black blackLorem Ipsum dolor simet black blackLorem Ipsum dolor
-                simet black blackLorem Ipsum dolor simet black black Lorem Ipsum
-                dolor simet black black Lorem Ipsum dolor simet black black
-                Lorem Ipsum dolor simet black black Lorem Ipsum dolor simet
-                black black Lorem Ipsum dolor simet black black Lorem Ipsum
-                dolor simet black black Lorem Ipsum dolor simet black black
-                Lorem Ipsum dolor simet black black Lorem Ipsum dolor simet
-                black black
+                The project started around November 2019 as a Grand Prize
+                winning entry to a hackathon that tackles current problems in
+                the Philippnes, such as traffic, natural disasters, heath and
+                education.
+              </p>
+
+              <p>
+                The first version of the project focuses on utilizing the
+                benefits of
+                <code>Fee cellular data for Facebook Messenger</code> To allow
+                people to immediately send distress calls from an affected area
+                in an event of a natural disaster.
+              </p>
+
+              <p>
+                We decided to keep the project open, and keep improving it ever
+                since.
               </p>
             </div>
           </div>
