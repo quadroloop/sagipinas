@@ -66,7 +66,8 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Building technologies for nationwide resilience."
+      featureImage="img/v1-app.png"
     >
       <header
         className={clsx("hero hero--primary hero-banner", styles.heroBanner)}
