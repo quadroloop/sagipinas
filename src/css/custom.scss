@@ -1,0 +1,157 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+} */
+
+.navbar-sidebar {
+  background: rgb(24, 24, 90);
+}
+
+.navbar {
+  background: rgb(24, 24, 90);
+
+  strong {
+    color: #fff;
+  }
+
+  a {
+    color: #fff !important;
+
+    &:hover {
+      color: rgb(36, 206, 206) !important;
+    }
+
+    &.navbar__link--active {
+      color: rgb(36, 206, 206) !important;
+    }
+  }
+}
+
+.hero-banner {
+  background: linear-gradient(rgba(22, 22, 110, 0.575), rgba(6, 6, 88, 0.438)),
+    url("/img/map.png");
+  background-size: cover;
+  color: #fff !important;
+
+  .button {
+    color: rgb(65, 198, 238) !important;
+    transition: 0.3s;
+
+    &:hover {
+      color: rgb(31, 52, 148) !important;
+      box-shadow: 1px 0px 15px 1px rgba(232, 236, 243, 0.795);
+      transition: 0.3s;
+    }
+  }
+}
+
+.banner-logo {
+  width: 50px;
+}
+
+.app-screenshot {
+  margin-top: 50px;
+  margin-bottom: -250px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 15px 1px rgba(85, 190, 223, 0.795);
+}
+
+.hero__title {
+  font-weight: 250;
+  span {
+    color: rgba(245, 200, 104, 0.925) !important;
+  }
+}
+
+.content-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 0px;
+
+  h1 {
+    font-weight: 300;
+  }
+
+  p {
+    color: rgb(109, 106, 106);
+  }
+}
+
+.section-container {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+    img {
+      width: 600px;
+      box-shadow: 0px 4px 26px 1px rgba(51, 75, 141, 0.486);
+    }
+
+    .text-content {
+      margin-left: 50px;
+      width: 450px;
+    }
+  }
+}
+
+.footer__logo {
+  $size: 50px;
+  width: $size;
+}
+
+@media (max-width: 850px) {
+  .section-container {
+    .content {
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+
+      .text-content {
+        margin: 20px 0px;
+        width: 100%;
+      }
+    }
+  }
+
+  .projects-slider {
+    flex-direction: column;
+    width: 100%;
+
+    .project-card {
+      width: 90% !important;
+      margin-bottom: 20px !important;
+    }
+  }
+}
