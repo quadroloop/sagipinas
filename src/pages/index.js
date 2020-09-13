@@ -93,7 +93,7 @@ function Home() {
             </Link>
           </div>
           <img
-            src="https://mist.now.sh/mist/v1-app.png"
+            src="img/v1-app.png"
             alt="Sagipinasa V1"
             className="app-screenshot"
           />

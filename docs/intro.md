@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Introduction
-sidebar_label: Introduction
+title: Docusaurus v2 Guidelines
+sidebar_label: Documentation Guidelines
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
