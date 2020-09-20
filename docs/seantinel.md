@@ -19,7 +19,7 @@ This project is in active development.
 
 :::
 
-[![karagathon-banner](http://karagatanpatrol.org/karagathon/KaragathonPoster.png)]()
+[![karagathon-banner](/img/KaragathonPoster.png)]()
 
 Seantinel was create as an entry to the first ever Karagathon. A hackathon calling for Technology-based solutions to combat illegal fishing in the philippines.
 
