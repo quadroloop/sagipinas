@@ -3,6 +3,8 @@ id: seantinel
 title: Seantinel Project
 ---
 
+An open IoT platform, with real-time data processing that can be used as an independent communication layer to gather reports of illegal fishing and maritime incidents in different municipal waters without fully relying on expensive existing communication infrastructures, such as signal reception and expensive radio equipment.
+
 [![project-banner](https://seantinel-demo-blue.vercel.app/dashboard.png)]()
 
 **Seantinel** [Sea + Sentinel] - Derived from the phrase "Gaurdian of the Sea". Is the first re-implementation of the SagiPinas Project created to tackle the problem of illegal fishing in the philippines
