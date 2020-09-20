@@ -10,41 +10,45 @@ const ProjectSlider = (props) => {
       </div>
 
       <div className="projects-slider">
-        <div
-          className="project-card"
-          style={{
-            background: `linear-gradient(rgba(3, 16, 22, 0.13), rgba(10, 3, 36, 0.966))
+        <a href="/docs/v1-doc">
+          <div
+            className="project-card"
+            style={{
+              background: `linear-gradient(rgba(3, 16, 22, 0.13), rgba(10, 3, 36, 0.966))
             center,
           url("https://mist.now.sh/mist/v1-app.png")`,
-            backgroundSize: "cover",
-          }}
-        >
-          <div className="project-info">
-            <div className="info">
-              <h3>SagiPinas / v1</h3>
-              <p>Disaster Risk Reponse platform</p>
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="project-info">
+              <div className="info">
+                <h3>SagiPinas / v1</h3>
+                <p>Disaster Risk Reponse platform</p>
+              </div>
+              <i className="la la-chevron-circle-right" />
             </div>
-            <i className="la la-chevron-circle-right" />
           </div>
-        </div>
+        </a>
 
-        <div
-          className="project-card"
-          style={{
-            background: `linear-gradient(rgba(3, 16, 22, 0.13), rgba(10, 3, 36, 0.966))
+        <a href="/docs/seantinel">
+          <div
+            className="project-card"
+            style={{
+              background: `linear-gradient(rgba(3, 16, 22, 0.13), rgba(10, 3, 36, 0.966))
             center,
           url("https://seantinel-demo-blue.vercel.app/dashboard.png")`,
-            backgroundSize: "cover",
-          }}
-        >
-          <div className="project-info">
-            <div className="info">
-              <h3>Seantinel</h3>
-              <p>Open Network platform monitoring municipal fishing areas</p>
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="project-info">
+              <div className="info">
+                <h3>Seantinel</h3>
+                <p>Open Network platform monitoring municipal fishing areas</p>
+              </div>
+              <i className="la la-chevron-circle-right" />
             </div>
-            <i className="la la-chevron-circle-right" />
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
