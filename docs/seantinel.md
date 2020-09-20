@@ -5,71 +5,32 @@ title: Seantinel Project
 
 [![project-banner](https://seantinel-demo-blue.vercel.app/dashboard.png)]()
 
-**Seantinel** is the first re-implementation of the SagiPinas Project designed to tackle the problem of illegal fishing in the philippines
+**Seantinel** [Sea + Sentinel] - Derived from the phrase "Gaurdian of the Sea". Is the first re-implementation of the SagiPinas Project created to tackle the problem of illegal fishing in the philippines
 
-### Project Status
+The Project was awarded 2nd Prize winner in the first ever Karagathon, a hackathon to combat illegal fishing in the Philippines on September 4, 2020.
 
-:::important
+### About the project
 
-`Seantinel` : is in active development, use the software at your own risk.
+[![karagathon-banner](http://karagatanpatrol.org/karagathon/KaragathonPoster.png)]()
 
-:::
+Seantinel was create as an entry to the first ever Karagathon. A hackathon calling for Technology-based solutions to combat illegal fishing in the philippines.
 
-### Features
+The event was hosted by Oceana Philippines in partnership with DOST-ASTI,
 
-List of target features for the project:
+### How it works
 
-| Feature Name        |  Status  |
-| ------------------- | :------: |
-| Real-time           | Complete |
-| Digital Mapping     | Complete |
-| Analytics           | Complete |
-| Support IoT Devices | Complete |
-| Device Registry     | Pending  |
+The system is consists IoT devices forming a mesh network to create a communication later for patrol men to help detect and monitor different maritime incidents, including illegal fishing and accidents.
 
-### Development
+[![karagathon-banner](https://seantinel-demo-blue.vercel.app/visual.png)]()
 
-The project is built with Create React App making it very easy to adapt and modify to your needs, simply clone the repository
-install dependencies and run the development environment using `yarn` or `npm`.
+Devices like nodes and gateways communicate to each other to help transmit the data to the internet, or a base station ready to record and anlayze the report.
 
-```sh
-yarn start
-```
+### The Team
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Team Hydraean
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-```yarn test
-yarn test
-```
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-```yarn build
-yarn build
-```
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-### Technology
-
-- **Argon Dashboard** by Creative Tim: https://github.com/creativetimofficial/argon-dashboard
-- **Mapbox** for Mapping Platfrom: https://mapbox.com
-- **Socket.io** for Real-time interactions using WebSockets: https://socket.io
-
-### Deployment
-
-**`Seantinel`** can be deployed on the following services:
-
-- Vercel: https://vercel.com
-- Heroku: https://heroku.com
-
-> With the two options listed above, **Vercel** is the recommended service if you want to host an instance of the Web Application.
+- Bryce Narciso Mercines
+- Aletheia Grace Del Rosario
+- Michael Allan Corpuz
+- Francis Mago
+- Hunneleth Villalon

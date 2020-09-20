@@ -3,7 +3,7 @@ module.exports = {
     General: ["original-doc", "v1-doc"],
     Software: ["v1-doc"],
     Hardware: [],
-    Hydraean: ["seantinel", "kraken-doc"],
+    Hydraean: ["seantinel", "hydra-doc", "kraken-doc"],
     Documentation: ["intro"],
   },
 };

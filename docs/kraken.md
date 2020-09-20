@@ -1,9 +1,17 @@
 ---
 id: kraken-doc
-title: Hydraean / kraken API
+title: Seantinel / kraken API
 ---
 
 > The backed service for the Seantinel Project built with NodeJS
+
+### Project Status
+
+:::important
+
+`kraken API` : is in active development, use the software at your own risk.
+
+:::
 
 ### Main Features:
 

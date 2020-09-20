@@ -102,14 +102,12 @@ module.exports = {
           homePageId: "original-doc",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/quadroloop/sagipinas/edit/master/website/",
+          editUrl: "https://github.com/quadroloop/sagipinas/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/quadroloop/sagipinas/edit/master/website/blog/",
+          editUrl: "https://github.com/quadroloop/sagipinas/edit/master/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
