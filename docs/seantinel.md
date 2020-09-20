@@ -11,11 +11,23 @@ The Project was awarded 2nd Prize winner in the first ever Karagathon, a hackath
 
 ### About the project
 
+:::important
+
+This project is in active development.
+
+:::
+
 [![karagathon-banner](http://karagatanpatrol.org/karagathon/KaragathonPoster.png)]()
 
 Seantinel was create as an entry to the first ever Karagathon. A hackathon calling for Technology-based solutions to combat illegal fishing in the philippines.
 
-The event was hosted by Oceana Philippines in partnership with DOST-ASTI,
+The event was hosted by:
+
+- Department of Agriculture
+- Bureau of Fisheries and Aquatic Resources
+- DOST-ASTI
+- Oceana Philippines
+- Karagatan Patrol
 
 ### How it works
 
@@ -24,6 +36,12 @@ The system is consists IoT devices forming a mesh network to create a communicat
 [![karagathon-banner](https://seantinel-demo-blue.vercel.app/visual.png)]()
 
 Devices like nodes and gateways communicate to each other to help transmit the data to the internet, or a base station ready to record and anlayze the report.
+
+### Github Organization
+
+all of the source code for the project can be found here:
+
+https://github.com/Hydraean
 
 ### The Team
 

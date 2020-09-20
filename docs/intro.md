@@ -198,11 +198,27 @@ This line is also a separate paragraph, but... This line is only separated by a 
 
 ## Admonitions
 
+```md
 :::note
 
 This is a note
 
 :::
+```
+
+:::note
+
+This is a note
+
+:::
+
+```md
+:::tip
+
+This is a tip
+
+:::
+```
 
 :::tip
 
@@ -210,17 +226,41 @@ This is a tip
 
 :::
 
+```md
+:::important
+
+This is important
+
+:::
+```
+
 :::important
 
 This is important
 
 :::
 
+```md
 :::caution
 
 This is a caution
 
 :::
+```
+
+:::caution
+
+This is a caution
+
+:::
+
+```md
+:::warning
+
+This is a warning
+
+:::
+```
 
 :::warning
 
