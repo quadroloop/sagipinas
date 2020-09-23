@@ -120,7 +120,7 @@ function Home() {
 
               <p>
                 The first version of the project focuses on utilizing the
-                benefits of
+                benefits of{" "}
                 <code>Fee cellular data for Facebook Messenger</code> To allow
                 people to immediately send distress calls from an affected area
                 in an event of a natural disaster.
