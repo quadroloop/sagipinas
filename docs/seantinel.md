@@ -39,6 +39,10 @@ The system is consists IoT devices forming a mesh network to create a communicat
 
 Devices like nodes and gateways communicate to each other to help transmit the data to the internet, or a base station ready to record and anlayze the report.
 
+### Hardware Documentation
+
+- [Node Device](/docs/seantinel-node-doc)
+
 ### Github Organization
 
 all of the source code for the project can be found here:

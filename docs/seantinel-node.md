@@ -3,7 +3,7 @@ id: seantinel-node-doc
 title: Seantinel / Node
 ---
 
-Node Device for the seantinel project. This device is capable of communicating with consumer electronics.
+Node Device for the [Seantinel Project](/docs/seantinel). This device is capable of communicating with consumer electronics.
 
 ### Schematic Diagram:
 

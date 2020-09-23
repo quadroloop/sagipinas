@@ -57,11 +57,27 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Links
 
+```md
 [I'm an inline-style link](https://www.google.com/)
+```
+
+[I'm an inline-style link](https://www.google.com/)
+
+```md
+[I'm an inline-style link with title](https://www.google.com/ "Google's Homepage")
+```
 
 [I'm an inline-style link with title](https://www.google.com/ "Google's Homepage")
 
+```md
 [I'm a reference-style link][arbitrary case-insensitive reference text]
+```
+
+[I'm a reference-style link][arbitrary case-insensitive reference text]
+
+```md
+[You can use numbers for reference-style link definitions][1]
+```
 
 [You can use numbers for reference-style link definitions][1]
 
