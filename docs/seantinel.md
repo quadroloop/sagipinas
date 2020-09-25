@@ -33,7 +33,7 @@ The event was hosted by:
 
 ### How it works
 
-The system is consists IoT devices forming a mesh network to create a communication later for patrol men to help detect and monitor different maritime incidents, including illegal fishing and accidents.
+The system consists IoT devices forming a mesh network to create a communication layer for patrol authorities to help detect and monitor different maritime events including illegal fishing and accidents.
 
 [![karagathon-banner](https://seantinel-demo-blue.vercel.app/visual.png)]()
 
