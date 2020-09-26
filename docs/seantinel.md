@@ -51,7 +51,9 @@ https://github.com/Hydraean
 
 ### The Team
 
-> Team Hydraean
+Team Hydraean discussing the Seantinel project over Google Meet.
+
+![karagathon-banner](/img/team_discussion_1.png)
 
 - Bryce Narciso Mercines
 - Aletheia Grace Del Rosario
