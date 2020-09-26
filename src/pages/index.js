@@ -94,7 +94,7 @@ function Home() {
             </Link>
           </div>
           <img
-            src="img/v1-app.png"
+            src="img/v1-app.gif"
             alt="Sagipinasa V1"
             className="app-screenshot"
           />
