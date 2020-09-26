@@ -43,7 +43,7 @@ const ProjectSlider = (props) => {
             <div className="project-info">
               <div className="info">
                 <h3>Seantinel</h3>
-                <p>Open Network platform monitoring municipal fishing areas</p>
+                <p>Open platform monitoring municipal fishing areas</p>
               </div>
               <i className="la la-chevron-circle-right" />
             </div>
