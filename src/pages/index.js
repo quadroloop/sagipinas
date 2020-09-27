@@ -100,7 +100,7 @@ function Home() {
           /> */}
 
           <video className="app-screenshot" autoPlay loop controls>
-            <source src="/img/v1.mov" type="video/mp4" />
+            <source src="/img/v1-app.mov" type="video/mp4" />
           </video>
         </div>
       </header>
