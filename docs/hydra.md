@@ -3,6 +3,8 @@ id: hydra-doc
 title: Seantinel / hydra
 ---
 
+Hydra is the frontend web application for the Seantinel project written in javascript.
+
 [![project-banner](https://seantinel-demo-blue.vercel.app/analytics.png)]()
 
 ### Project Status
@@ -65,7 +67,7 @@ Your app is ready to be deployed!
 
 ### Deployment
 
-**`Seantinel`** can be deployed on the following services:
+**`Hydra`** can be deployed on the following services:
 
 - Vercel: https://vercel.com
 - Heroku: https://heroku.com
