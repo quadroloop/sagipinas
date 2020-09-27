@@ -93,11 +93,15 @@ function Home() {
               Get Started
             </Link>
           </div>
-          <img
+          {/* <img
             src="img/v1-app.png"
             alt="Sagipinasa V1"
             className="app-screenshot"
-          />
+          /> */}
+
+          <video className="app-screenshot" autoPlay loop controls>
+            <source src="/img/v1.mov" type="video/mp4" />
+          </video>
         </div>
       </header>
       <main>
