@@ -11,7 +11,8 @@ Node Device for the [Seantinel Project](/docs/seantinel). This device is capable
 
 ![schematic](/img/node-schematic.png)
 
-This prototype version uses a TTGO OLED V1 Development Board Based on ESP32 which supports LoRa using the `SX1276 LoRa Transciever`. additionally it also supports WiFi which allows the device to act as a WiFi Access Point for device like smartphones to communicate with.
+Schematic Diagram for the Node Device
+This prototype version uses a TTGO OLED V1 Development Board Based on ESP32 which supports LoRa using the SX1276 LoRa Transceiver. additionally, it also supports WiFi which allows the device to act as a WiFi Access Point for devices like smartphones to communicate with.
 
 ### List of Parts
 
@@ -28,11 +29,11 @@ List of parts for the prototype Node Device:
 | AAA Battery                    |    3     |
 | AAA Battery Pack 6v            |    1     |
 
-One of the problems of this design is that it uses disposable AAA Batteries, and that it requires 5 Volts to operate. A more Efficient solution would be using a reacharagable battery with a charging circuit that can be attached to solar panels for charging.
+One of the problems of this design is that it uses disposable AAA Batteries and that it requires 5 Volts to operate. A more efficient solution would be using a rechargeable battery with a charging circuit that can be attached to solar panels for charging.
 
 ### Main Board
 
-This is the picture of the board and the main board and it accurate pinout aligned with the schematic diagram:
+This is the picture of the board and the mainboard and it's accurate pinout aligned with the schematic diagram:
 
 ![TTGO V1 pinout](https://camo.githubusercontent.com/fc7a5885669367fe23b91252f202a35bb8d42e37/68747470733a2f2f7072696d616c636f727465782e66696c65732e776f726470726573732e636f6d2f323031372f31312f7474676f6c6f726170696e6f75745f76322e6a7067)
 
