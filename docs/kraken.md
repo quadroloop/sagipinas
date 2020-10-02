@@ -9,7 +9,7 @@ title: Seantinel / kraken API
 
 :::important
 
-`kraken API` : is in active development, use the software at your own risk.
+`kraken API`: is in active development, use the software at your own risk.
 
 :::
 
@@ -17,7 +17,7 @@ title: Seantinel / kraken API
 
 - Supports Real-time Updates via Websockets using Socket.io
 - Supports REST API endpoints
-- Open, Cross Origin Request Enabled.
+- Open, Cross-Origin Request Enabled.
 
 ## Documentation
 
@@ -185,9 +185,9 @@ Sample Request Data, in the body of the request:
 
 ### Real-time Events
 
-> You can connect to the web socket server and an get instant stream of data from the service once an update occurs, you can do this by using the Socket.io Framework. this is available in multiple language like JavaScript and Python, it can also be done both in the client and server side.
+> You can connect to the web socket server and get an instant stream of data from the service once an update occurs, you can do this by using the Socket.io Framework. this is available in multiple languages like JavaScript and Python, it can also be done both on the client and server-side.
 
-Example connection from client side in a React Application using the `socket.io-client` package:
+Example connection from the client-side in a React Application using the `socket.io-client` package:
 
 ```js
 import React from "react";

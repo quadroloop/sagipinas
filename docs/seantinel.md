@@ -7,9 +7,9 @@ An open IoT platform, with real-time data processing that can be used as an inde
 
 [![project-banner](https://seantinel-demo-blue.vercel.app/dashboard.png)]()
 
-**Seantinel** [Sea + Sentinel] - Derived from the phrase "Gaurdian of the Sea". Is the first re-implementation of the SagiPinas Project created to tackle the problem of illegal fishing in the philippines
+**Seantinel** [Sea + Sentinel] - Derived from the phrase "Guardian of the Sea". Is the first re-implementation of the SagiPinas Project created to tackle the problem of illegal fishing in the Philippines
 
-The Project was awarded 2nd Prize winner in the first ever Karagathon, a hackathon to combat illegal fishing in the Philippines on September 4, 2020.
+The Project was awarded 2nd Prize winner in the first-ever Karagathon, a hackathon to combat illegal fishing in the Philippines on September 4, 2020.
 
 ### About the project
 
@@ -21,7 +21,7 @@ This project is in active development.
 
 [![karagathon-banner](/img/KaragathonPoster.png)]()
 
-Seantinel was create as an entry to the first ever Karagathon. A hackathon calling for Technology-based solutions to combat illegal fishing in the philippines.
+Seantinel was created as an entry to the first ever Karagathon. A hackathon calling for Technology-based solutions to combat illegal fishing in the Philippines.
 
 The event was hosted by:
 
@@ -37,7 +37,7 @@ The system consists of IoT devices forming a mesh network to create a communicat
 
 [![karagathon-banner](https://seantinel-demo-blue.vercel.app/visual.png)]()
 
-Devices like nodes and gateways communicate with each other to help transmit the data to the internet, or a base station ready to record and analayze the report.
+Devices like nodes and gateways communicate with each other to help transmit the data to the internet, or a base station ready to record and analyze the report.
 
 ### Hardware Documentation
 
