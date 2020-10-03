@@ -42,6 +42,7 @@ Devices like nodes and gateways communicate with each other to help transmit the
 ### Hardware Documentation
 
 - [Node Device](/docs/seantinel-node-doc)
+- [Gateway Device](/docs/seantinel-gateway-doc)
 
 ### Github Organization
 
