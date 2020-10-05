@@ -7,17 +7,21 @@ title: Seantinel / Gateway
 
 `Seantinel Gateway` is the device responsible for listening for transmissions from **Seantinel Node Devices** and attempt to either save the save, echo, or broadcast it to the Internet.
 
+The earliest prototype the device functions as a very simple single channel LoRa gateway.
+
 ### Hardware
 
 For the earliest version the Gateway runs on a **TTGO OLED LoRa32 v1 Development board**, only this time, it actually utilizes the OLED display to show the status of the connection
 
-### Schematic Diagram
+### First Prototype
+
+#### Schematic Diagram
 
 Below is the Schematic Diagram for the Gateway Device, it is relatively simple. it is however just a single channel Gateway and has no other external communication interface other than WiFi and a pre configured Access Point that it can use to connect to the Internet. Further improvements for this is already in progress.
 
 ![schematic](/img/gateway_schematics.png)
 
-### List of Parts
+#### List of Parts
 
 List of parts need to build the device. The project enclosure is not included on the list since you can essentially fit the circuit in any plastic enclosure.
 
@@ -27,8 +31,6 @@ List of parts need to build the device. The project enclosure is not included on
 | SPST Switch                    |    1     |
 | AAA Battery                    |    3     |
 | AAA Battery Pack 6v            |    1     |
-
-### First Prototype
 
 This prototype is just a proof of concept device, using only the TTGO OLED v1 Development board, a power source and a switch.
 

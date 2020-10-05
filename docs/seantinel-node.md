@@ -3,9 +3,19 @@ id: seantinel-node-doc
 title: Seantinel / Node
 ---
 
-Node Device for the [Seantinel Project](/docs/seantinel). This device is capable of communicating with consumer electronics.
+### Overview
 
-### Schematic Diagram:
+The Seantinel Node Device for the [Seantinel Project](/docs/seantinel). This device is capable of communicating with consumer electronics. And is intended to be used by Coastal Patrol Authorities for reporting illegal fishing activities or emergency situations at sea.
+
+### Main Board
+
+This is the picture of the board and the mainboard and it's accurate pinout aligned with the schematic diagram:
+
+![TTGO V1 pinout](https://camo.githubusercontent.com/fc7a5885669367fe23b91252f202a35bb8d42e37/68747470733a2f2f7072696d616c636f727465782e66696c65732e776f726470726573732e636f6d2f323031372f31312f7474676f6c6f726170696e6f75745f76322e6a7067)
+
+### First Prototype
+
+#### Schematic Diagram:
 
 > Schematic Diagram for the Node Device
 
@@ -14,7 +24,7 @@ Node Device for the [Seantinel Project](/docs/seantinel). This device is capable
 Schematic Diagram for the Node Device
 This prototype version uses a TTGO OLED V1 Development Board Based on ESP32 which supports LoRa using the SX1276 LoRa Transceiver. additionally, it also supports WiFi which allows the device to act as a WiFi Access Point for devices like smartphones to communicate with.
 
-### List of Parts
+#### List of Parts
 
 List of parts for the prototype Node Device:
 
@@ -30,14 +40,6 @@ List of parts for the prototype Node Device:
 | AAA Battery Pack 6v            |    1     |
 
 One of the problems of this design is that it uses disposable AAA Batteries and that it requires 5 Volts to operate. A more efficient solution would be using a rechargeable battery with a charging circuit that can be attached to solar panels for charging.
-
-### Main Board
-
-This is the picture of the board and the mainboard and it's accurate pinout aligned with the schematic diagram:
-
-![TTGO V1 pinout](https://camo.githubusercontent.com/fc7a5885669367fe23b91252f202a35bb8d42e37/68747470733a2f2f7072696d616c636f727465782e66696c65732e776f726470726573732e636f6d2f323031372f31312f7474676f6c6f726170696e6f75745f76322e6a7067)
-
-### First Prototype
 
 ![prototypes](/img/prototypes.jpg)
 
