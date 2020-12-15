@@ -3,8 +3,6 @@ id: kraken-doc
 title: Seantinel / kraken API
 ---
 
-# Kraken
-
 > The backend service for the Seantinel Project built with NodeJS
 
 ### Main Features:
