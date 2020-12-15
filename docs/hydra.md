@@ -5,7 +5,7 @@ title: Seantinel / hydra
 
 Hydra is the frontend web application for the Seantinel project written in javascript.
 
-[![project-banner](https://seantinel-demo-blue.vercel.app/analytics.png)]()
+[![hydra-app-banner](https://i.ibb.co/sstcB1q/hydra-app.png)]()
 
 ### Project Status
 

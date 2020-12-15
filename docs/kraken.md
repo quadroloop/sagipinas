@@ -3,15 +3,9 @@ id: kraken-doc
 title: Seantinel / kraken API
 ---
 
-> The backed service for the Seantinel Project built with NodeJS
+# Kraken
 
-### Project Status
-
-:::important
-
-`kraken API`: is in active development, use the software at your own risk.
-
-:::
+> The backend service for the Seantinel Project built with NodeJS
 
 ### Main Features:
 
@@ -73,35 +67,12 @@ Build:
 
 > gives a list of incidents and reports available in the system
 
-Sample Response:
+You can also search all incidents using the following endpoint.
 
-```json
-[
-  {
-    "id": "47f2bbe1-0ed2-46cf-bc4f-82416665ac91",
-    "details": "Illegal Fishing Activity",
-    "device_id": "HN-00001",
-    "type": "illegal_fishing",
-    "name": "EMERGENCY ALERT",
-    "title": "ILLEGAL FISHING REPORT",
-    "address": "N/A",
-    "reportee": "Anonymous",
-    "source_platform": "node",
-    "date": "August 21 2020,04:42:03 PM",
-    "coordinates": {
-      "long": 121.921724,
-      "lat": 14.5446942
-    },
-    "report_type": "MANUAL",
-    "status": "CONFIRMED",
-    "verifier": "Hydraean_Admin"
-  }
-]
-```
+- `[GET]/incidents/search`
+  Required Parameters:
 
-#### [GET] `/devices`
-
-> Gives a list of all unique devices that is part of the network
+- `query` - (String) the system will provided the closest match using a fuzzy search algorithm/
 
 Sample Response:
 
@@ -133,6 +104,13 @@ Sample Response:
 
 > Gives a list of all unique devices that is part of the network
 
+you can also search devices that are registered in the system using:
+
+- `[GET]/devices/search`
+  Required Parameters:
+
+- `query` - (String) the system will provided the closest match using a fuzzy search algorithm
+
 Sample Response:
 
 ```json
@@ -159,28 +137,69 @@ Sample Response:
 ]
 ```
 
-#### [POST] `/add/report`
+#### [GET] `/analytics`
 
-> Allows you to add reports
+> Gives an overview of data sorted by date. also contains a list and information of other fishery management areas.
 
-Sample Request Data, in the body of the request:
+Get more specific pieces of data:
+
+- `/analytics/incidents/overview`
+- `/analytics/incidents/complete/`
+
+**Date Search:** -`/analytics/incidents/date-search`
+Search data about recorded incidents and filter them by date.
+
+Required parameters:
+
+- `fma` - if not provided or invalid the all incidents data will be search and returned.
+- `startDate` - Start date of search (required).
+- `endDate` - End date of earch (required).
+
+```json
+{
+  "fma_list": [
+    "FMA-01",
+    ...
+  ],
+  "incidents_overview": [
+    {
+      "fma": "FMA-01",
+      "records": [
+        {
+          "date": "11-01-2020",
+          "activityCount": 1
+        }
+      ]
+    },
+
+}
+```
+
+Sample Response:
 
 ```json
 [
   {
-    "details": "This is just a test",
+    "id": "47f2bbe1-0ed2-46cf-bc4f-82416665ac91",
+    "details": "Illegal Fishing Activity",
     "device_id": "HN-00001",
     "type": "illegal_fishing",
-    "name": "Blast Fishing",
-    "title": "Test report for illegal fishing",
-    "address": "FMA-06",
-    "reportee": "Juan Dela Cruz",
+    "name": "EMERGENCY ALERT",
+    "title": "ILLEGAL FISHING REPORT",
+    "address": "N/A",
+    "reportee": "Anonymous",
+    "source_platform": "node",
+    "date": "August 21 2020,04:42:03 PM",
     "coordinates": {
       "long": 121.921724,
       "lat": 14.5446942
-    }
-  }
-]
+    },
+    "report_type": "MANUAL",
+    "status": "CONFIRMED",
+    "verifier": "Hydraean_Admin"
+  },
+  ...
+  ]
 ```
 
 ### Real-time Events
