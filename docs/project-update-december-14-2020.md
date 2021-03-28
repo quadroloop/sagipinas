@@ -1,6 +1,6 @@
 ---
-id: project-update-1
-title: "Project Update: (December 14, 2020)"
+id: project-update-december-14-2020
+title: "Project Updates: (December 14, 2020)"
 ---
 
 After a few months of development. Here are the significant updates for the software and hardware aspects of the project.
