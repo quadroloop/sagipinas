@@ -11,7 +11,7 @@ First project update for the year 2021, the software and hardware aspect of the 
 
 [![project-banner](https://mist.now.sh/mist/sm-1.png)]()
 
-The improved UI Screens are completed for the Seantinel Project. The Seantinel Mobile application is essentially a mobile version of the web application. Idea is to keep the system usable with just a smartphone, without needing an internet connection. The Mobile Application is in the middle stages of development, and only needs further feature implementation and testing to get it ready for a field test.
+The improved UI Screens are completed for the Seantinel Project. The Seantinel Mobile application is essentially a mobile version of the web application. The idea is to keep the system usable with just a smartphone, without needing an internet connection. The Mobile Application is in the middle stages of development, and only needs further feature implementation and testing to get it ready for a field test.
 
 #### The latest updates for the Web Application:
 
