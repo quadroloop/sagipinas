@@ -5,6 +5,7 @@ module.exports = {
     Hardware: ["seantinel-node-doc", "seantinel-gateway-doc"],
     Seantinel: [
       "seantinel",
+      "project-update-april-2021",
       "project-update-march-28-2021",
       "project-update-december-14-2020",
       "hydra-doc",

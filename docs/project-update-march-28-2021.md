@@ -37,14 +37,14 @@ The improved UI Screens are completed for the Seantinel Project. The Seantinel M
 
 #### Completed from last target features for software (December 22, 2020)
 
-| Backend                          |            Web App             |    Mobile App     |
-| -------------------------------- | :----------------------------: | :---------------: |
-| ✅ Support Report Upload         |         ✅ Improved UI         |  ✅ Improved UI   |
-| ✅ Improved Database Integration |   ✅ User Management Screens   | ✅ Report Logging |
-| ✅ Improved Timeframe mapping    | GSM Modules / Transmit Support |  Upload Reports   |
-| Support Dataset export           | UI for dataset upload / Export |   FMA handbook    |
-| Support Device Registry          |                                |                   |
-| ✅ User Management               |                                |                   |
+| Backend                                 |              Web App              |        Mobile App        |
+| --------------------------------------- | :-------------------------------: | :----------------------: |
+| ✅ &nbsp; Support Report Upload         |       ✅ &nbsp; Improved UI       |  ✅ &nbsp; Improved UI   |
+| ✅ &nbsp; Improved Database Integration | ✅ &nbsp; User Management Screens | ✅ &nbsp; Report Logging |
+| ✅ &nbsp; Improved Timeframe mapping    |  GSM Modules / Transmit Support   |      Upload Reports      |
+| Support Dataset export                  |  UI for dataset upload / Export   |       FMA handbook       |
+| Support Device Registry                 |                                   |                          |
+| ✅ &nbsp; User Management               |                                   |                          |
 
 ### Hardware Updates:
 
@@ -62,11 +62,11 @@ The devices are all battery-powered, in this case, it uses power banks that can 
 
 #### Completed from last target features for software (December 22, 2020)
 
-| Node device               |          Gateway Device           |
-| ------------------------- | :-------------------------------: |
-| ✅ Solar Power / Charging |     ✅ Solar Power / Charging     |
-| ✅ Internal device ID     | ✅ Waterproof / Buoyant Enclosure |
-| ✅ Waterproof Enclosure   | ✅ GSM Modules / Transmit Support |
+| Node device                      |              Gateway Device              |
+| -------------------------------- | :--------------------------------------: |
+| ✅ &nbsp; Solar Power / Charging |     ✅ &nbsp; Solar Power / Charging     |
+| ✅ &nbsp; Internal device ID     | ✅ &nbsp; Waterproof / Buoyant Enclosure |
+| ✅ &nbsp; Waterproof Enclosure   | ✅ &nbsp; GSM Modules / Transmit Support |
 
 ### Testing
 
