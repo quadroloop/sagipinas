@@ -36,8 +36,8 @@ module.exports = {
       ],
     },
     googleAnalytics: {
-      trackingID: 'UA-153524072-1',
-  },
+      trackingID: "UA-153524072-1",
+    },
     footer: {
       style: "dark",
       logo: {
@@ -52,6 +52,14 @@ module.exports = {
             {
               label: "General",
               to: "docs/",
+            },
+            {
+              label: "SagiPinas / v1",
+              to: "docs/v1-doc",
+            },
+            {
+              label: "Seantinel Project",
+              to: "docs/seantinel",
             },
           ],
         },
